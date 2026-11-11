@@ -1,0 +1,4 @@
+import type {Metadata} from "next";
+import BetaFeedbackForm from "@/components/beta-feedback-form";
+export const metadata:Metadata={title:"Give Feedback | Quested",description:"Help shape the Quested early beta."};
+export default function FeedbackPage(){return <main className="mx-auto max-w-2xl px-5 py-10 sm:py-14"><p className="text-xs font-black uppercase tracking-[.2em] text-emerald-700">Build Quested with us</p><h1 className="mt-3 text-4xl font-black tracking-tight">What do you think?</h1><p className="mt-4 text-base leading-7 text-slate-700">Found a bug? Have an idea for a collection? Confused by something? Your notes help us make Quested better for the next explorers.</p><BetaFeedbackForm/></main>}

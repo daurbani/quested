@@ -3,6 +3,7 @@ import {useEffect,useMemo,useState} from "react";
 import Link from "next/link";
 import {allCollections,getCollectionDiscoveries} from "@/lib/catalog";
 import {supabaseBrowser} from "@/lib/supabase/client";
+import {recordBetaEvent} from "@/lib/beta-analytics";
 import {photoForCollection} from "@/lib/media";
 import {PhotoImage} from "@/components/photo";
 type Status="loading"|"signed-out"|"ready"|"error";
@@ -24,6 +25,7 @@ export default function WelcomeExperience(){
    if(result.error){setError("Your account is ready, but saved discoveries couldn’t be loaded.");setStatus("error");return;}
    setCompleted(new Set((result.data??[]).map(row=>row.discovery_slug)).size);
    setStatus("ready");
+   try{const key="quested-welcome-viewed:"+data.user.id;if(!sessionStorage.getItem(key)){sessionStorage.setItem(key,"1");void recordBetaEvent(data.user.id,"welcome_viewed")}}catch{}
   }).catch(()=>{if(active){setError("We couldn’t load your account.");setStatus("error")}});
   return()=>{active=false};
  },[]);
