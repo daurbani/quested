@@ -63,9 +63,9 @@ export default function WelcomeExperience(){
   </section>
   <section className="mt-8 rounded-2xl border border-emerald-200 bg-white p-6">
    <p className="text-xs font-black uppercase tracking-widest text-emerald-800">An easy first example</p>
-   <h2 className="mt-2 text-xl font-black">Already been to Mount Hood?</h2>
-   <p className="mt-2 text-sm leading-6 text-slate-600">Record your visit once, and it contributes to both Oregon Volcanoes and Cascade Summit Circuit. Just use the option that matches your actual experience.</p>
-   <Link href="/discoveries/mount-hood" className="mt-4 inline-block text-sm font-bold text-emerald-800 underline">See how a discovery works →</Link>
+   <h2 className="mt-2 text-xl font-black">Already been to Pittock Mansion?</h2>
+   <p className="mt-2 text-sm leading-6 text-slate-600">Record your visit once, and it contributes to both Portland Explorer and Portland Viewpoints. Start with an easy, familiar destination.</p>
+   <Link href="/discoveries/pittock-mansion" className="mt-4 inline-block text-sm font-bold text-emerald-800 underline">See how a discovery works →</Link>
   </section>
   <p className="mt-7 text-center text-xs leading-5 text-slate-500">Quested is an early beta with an Oregon-focused catalog. We're improving it with feedback from the first explorers.</p>
  </div>;
