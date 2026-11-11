@@ -38,8 +38,8 @@ export default function WelcomeExperience(){
   {status==="loading"&&<p role="status" className="mt-6 text-sm text-slate-600">Checking your account...</p>}
   {status==="signed-out"&&<section className="mt-5 rounded-2xl border border-emerald-200 bg-white p-6">
    <h2 className="text-xl font-black">First, create your adventure record</h2>
-   <p className="mt-2 text-sm leading-6 text-slate-600">Enter your email and open the sign-in link we send you. No password required. New accounts are created automatically.</p>
-   <Link href="/sign-in?next=/welcome" className="mt-4 inline-flex rounded-full bg-[#163e32] px-6 py-3 text-sm font-bold text-white hover:bg-emerald-900">Get started with email →</Link>
+   <p className="mt-2 text-sm leading-6 text-slate-600">Use Google when available, or enter your email and follow the sign-in link. No password required. New accounts are created automatically.</p>
+   <Link href="/sign-in?next=/welcome" className="mt-4 inline-flex rounded-full bg-[#163e32] px-6 py-3 text-sm font-bold text-white hover:bg-emerald-900">Create your account →</Link>
    <p className="mt-3 text-xs text-slate-500">You can explore without an account. Sign-in is required only to save discoveries.</p>
   </section>}
   {status==="error"&&<section role="alert" className="mt-5 rounded-xl bg-amber-50 p-5 text-sm text-amber-900">{error} <Link href="/sign-in?next=/welcome" className="font-bold underline">Sign in again</Link></section>}
