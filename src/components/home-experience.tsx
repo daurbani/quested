@@ -1,7 +1,7 @@
 "use client";
 import {useEffect,useMemo,useState} from "react";
 import Link from "next/link";
-import {allCollections,getCollectionDiscoveries,type Collection} from "@/lib/catalog";
+import {allCollections,type Collection} from "@/lib/catalog";
 import {supabaseBrowser} from "@/lib/supabase/client";
 import CollectionCard from "@/components/collection-card";
 import {photoForCollection} from "@/lib/media";
