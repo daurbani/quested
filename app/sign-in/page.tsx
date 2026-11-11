@@ -6,5 +6,5 @@ export default async function SignInPage({searchParams}:{searchParams:Promise<{n
  {q.error&&<p role="alert" className="mt-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">Sign-in did not finish. Please try again.</p>}
  <SignIn next={q.next??"/welcome"}/>
  </section>
- <p className="mt-5 text-center text-xs leading-5 text-slate-500">Quested is in early beta. Your saved discoveries are private to your account.</p>
+ <p className="mt-5 text-center text-xs leading-5 text-slate-500">Quested is in early beta. By using Quested, you agree to our <a className="font-semibold underline" href="/terms">Terms</a>. See our <a className="font-semibold underline" href="/privacy">Privacy Policy</a> for how your data is handled.</p>
  </main>;}
