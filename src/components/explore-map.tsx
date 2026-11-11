@@ -32,12 +32,33 @@ export default function ExploreMap(){
  const [mapError,setMapError]=useState(false),[loaded,setLoaded]=useState(false);
  const [selected,setSelected]=useState<string|null>(null),[collection,setCollection]=useState("all"),[filter,setFilter]=useState<Filter>("all");
  const [userId,setUserId]=useState<string|null>(null),[saved,setSaved]=useState<Set<string>>(()=>new Set()),[visited,setVisited]=useState<Set<string>>(()=>new Set());
- useEffect(()=>{const sb=supabaseBrowser();if(!sb)return;let active=true;
-  void sb.auth.getUser().then(async({data})=>{if(!active||!data.user)return;setUserId(data.user.id);
-   const [wishlist,history]=await Promise.all([sb.from("user_want_to_go").select("discovery_slug").eq("user_id",data.user.id),sb.from("user_discoveries").select("discovery_slug").eq("user_id",data.user.id)]);
-   if(active){if(!wishlist.error)setSaved(new Set((wishlist.data??[]).map(x=>x.discovery_slug)));if(!history.error)setVisited(new Set((history.data??[]).map(x=>x.discovery_slug)));}
-  });return()=>{active=false};
- },[]);
+ const [historyState,setHistoryState]=useState<"loading"|"ready"|"signed-out"|"error">("loading");
+ const [historyError,setHistoryError]=useState("");
+ const [refreshToken,setRefreshToken]=useState(0);
+ useEffect(()=>{
+  const sb=supabaseBrowser();if(!sb){setHistoryState("error");setHistoryError("Account connection unavailable.");return;}
+  let active=true;setHistoryState("loading");setHistoryError("");
+  void (async()=>{
+   try{
+    const {data,error}=await sb.auth.getUser();
+    if(!active)return;
+    if(error)throw error;
+    if(!data.user){setUserId(null);setHistoryState("signed-out");return;}
+    setUserId(data.user.id);
+    // Load completion history independently from wishlist, so one optional failure never hides completed pins.
+    const history=await sb.from("user_discoveries").select("discovery_slug").eq("user_id",data.user.id);
+    if(!active)return;
+    if(history.error)throw history.error;
+    setVisited(new Set((history.data??[]).map(row=>row.discovery_slug as string)));
+    setHistoryState("ready");
+    const wishlist=await sb.from("user_want_to_go").select("discovery_slug").eq("user_id",data.user.id);
+    if(active&&!wishlist.error)setSaved(new Set((wishlist.data??[]).map(row=>row.discovery_slug as string)));
+   }catch{
+    if(active){setHistoryState("error");setHistoryError("Your completed adventures could not be loaded. Try refreshing your progress.");}
+   }
+  })();
+  return()=>{active=false};
+ },[refreshToken]);
  useEffect(()=>{let active=true;void loadLeaflet().then(L=>{
   if(!active||!container.current)return;leaflet.current=L;const m=L.map(container.current,{scrollWheelZoom:false}).setView([44.7,-122.3],7);map.current=m;
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(m);
@@ -54,9 +75,11 @@ export default function ExploreMap(){
  }),[collection,filter,saved,visited]);
  useEffect(()=>{if(!loaded||!map.current||!leaflet.current)return;
   markers.current.forEach(x=>x.remove());markers.current=[];
-  for(const d of filtered){const coords=discoveryCoordinates[d.slug] as [number,number];
+  // Render finished destinations last, above unexplored pins that may overlap at a regional zoom.
+  const ordered=[...filtered].sort((a,b)=>Number(visited.has(a.slug))-Number(visited.has(b.slug)));
+  for(const d of ordered){const coords=discoveryCoordinates[d.slug] as [number,number];
    const color=visited.has(d.slug)?"#17785e":saved.has(d.slug)?"#be7b21":"#315c87";
-   const marker=leaflet.current.circleMarker(coords,{radius:13,color:"#ffffff",weight:3,fillColor:color,fillOpacity:0.95,opacity:1});
+   const marker=leaflet.current.circleMarker(coords,{radius:visited.has(d.slug)?15:12,color:"#ffffff",weight:3,fillColor:color,fillOpacity:0.95,opacity:1});
    marker.addTo(map.current).on("click",()=>setSelected(d.slug));markers.current.push(marker);
   }
  },[filtered,loaded,visited,saved]);
@@ -68,6 +91,10 @@ export default function ExploreMap(){
    <label className="flex-1 text-xs font-black text-emerald-950">Collection<select aria-label="Filter by collection" value={collection} onChange={e=>{setCollection(e.target.value);setSelected(null)}} className="mt-2 block w-full rounded-xl border border-emerald-900/20 bg-white px-3 py-3 text-sm font-semibold"><option value="all">All collections</option>{allCollections.map(c=><option key={c.slug} value={c.slug}>{c.name}</option>)}</select></label>
    <label className="flex-1 text-xs font-black text-emerald-950">Show<select aria-label="Filter by adventure status" value={filter} onChange={e=>{setFilter(e.target.value as Filter);setSelected(null)}} className="mt-2 block w-full rounded-xl border border-emerald-900/20 bg-white px-3 py-3 text-sm font-semibold"><option value="all">All discoveries</option><option value="unexplored">Not completed</option><option value="saved">Want to Go</option><option value="visited">Completed</option></select></label>
    <button type="button" onClick={frameResults} disabled={!loaded||filtered.length===0} className="rounded-xl border border-emerald-900/20 px-4 py-3 text-sm font-bold text-emerald-900 disabled:opacity-50">Fit map</button>
+  </div>
+  <div role="status" aria-live="polite" className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-xl bg-white px-4 py-3 text-sm shadow-sm">
+   <div className="font-semibold text-emerald-950">{historyState==="loading"?"Loading your completed adventures…":historyState==="ready"?`✓ ${visited.size} completed adventures loaded`:historyState==="signed-out"?"Sign in to see your completed places on the map.":historyError}</div>
+   <div className="flex flex-wrap gap-3">{historyState==="ready"&&<button type="button" onClick={()=>{setFilter("visited");setCollection("all");setSelected(null)}} className="font-bold text-emerald-800 underline underline-offset-2">Show completed pins</button>}{(historyState==="ready"||historyState==="error")&&<button type="button" onClick={()=>setRefreshToken(n=>n+1)} className="font-bold text-emerald-800 underline underline-offset-2">Refresh progress</button>}</div>
   </div>
   <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_330px]">
    <div className="relative min-h-[440px] overflow-hidden rounded-2xl bg-[#dae7d7] shadow-sm">
