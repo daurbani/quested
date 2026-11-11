@@ -13,7 +13,7 @@ export default function Home(){
     <div className="relative">
      <p className="text-[11px] font-black uppercase tracking-[.23em] text-emerald-200">Your next adventure starts here</p>
      <h1 className="mt-3 text-4xl font-black leading-[1.04] tracking-tight sm:text-5xl">Go places.<br/>Collect stories.</h1>
-     <p className="mt-4 max-w-lg text-sm leading-6 text-emerald-50 sm:text-base">Discover remarkable places, complete curated collections, and watch one adventure advance multiple goals.</p>
+     <p className="mt-4 max-w-lg text-sm leading-6 text-emerald-50 sm:text-base">Discover places that inspire you, save adventures for later, and celebrate every journey you complete.</p>
      <div className="mt-6 flex flex-wrap gap-3">
       <Link href="/map" className="hero-cta text-sm">Explore the map <span aria-hidden className="ml-2">→</span></Link>
       <Link href="/collections" className="inline-flex items-center justify-center rounded-full border border-white/60 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10">Browse collections</Link>
