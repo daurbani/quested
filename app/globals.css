@@ -4,3 +4,7 @@ body { margin: 0; background: #f7f8f5; color: #19322b; font-family: Arial, Helve
 a { color: inherit; text-decoration: none; }
 .hero-cta { background: #ffffff; color: #163e32 !important; display:inline-flex; align-items:center; justify-content:center; border-radius:9999px; font-weight:800; padding:0.85rem 1.5rem; }
 .hero-cta:hover { background: #e7f8ee; }
+
+@keyframes quested-sparkle { 0%,100% { transform:translateY(0) scale(1); opacity:.65; } 50% { transform:translateY(-8px) scale(1.14); opacity:1; } }
+@media (prefers-reduced-motion: no-preference) { .quested-sparkle { animation:quested-sparkle 2.4s ease-in-out infinite; } .quested-celebration { animation:quested-reveal .55s ease-out both; } }
+@keyframes quested-reveal { from { opacity:0; transform:translateY(12px); } to {opacity:1; transform:translateY(0)} }
