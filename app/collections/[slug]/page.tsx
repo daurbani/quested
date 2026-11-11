@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import { allCollections, getCollection } from "@/lib/catalog";
+import {notFound} from "next/navigation";
+import {allCollections,getCollection,getCollectionDiscoveries} from "@/lib/catalog";
+import DiscoveryFilter from "@/components/discovery-filter";
 export function generateStaticParams(){return allCollections.map(c=>({slug:c.slug}));}
-export default async function CollectionDetail({params}:{params:Promise<{slug:string}>}) {const {slug}=await params;const c=getCollection(slug);if(!c)notFound();return <main className="mx-auto max-w-4xl px-5 py-12"><Link href="/collections" className="font-semibold text-emerald-800">← All collections</Link><section className="mt-7 rounded-3xl bg-[#163e32] px-7 py-14 text-white md:px-12"><div className="text-6xl">{c.emoji}</div><p className="mt-7 text-sm uppercase tracking-widest text-emerald-200">{c.category}</p><h1 className="mt-3 text-4xl font-black">{c.name}</h1><p className="mt-5 text-lg text-emerald-100">{c.description}</p></section><section className="mt-10 rounded-2xl border border-emerald-950/10 bg-white p-7"><h2 className="text-2xl font-bold">Discoveries coming soon</h2><p className="mt-3 text-slate-600">The collection is ready. Its curated discovery list will be populated from the verified catalog in Milestone 2.</p></section></main>;}
+export default async function CollectionDetail({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const c=getCollection(slug);if(!c)notFound();const list=getCollectionDiscoveries(slug);return <main className="mx-auto max-w-5xl px-5 py-12">
+<Link href="/collections" className="font-semibold text-emerald-800">← All collections</Link>
+<section className="mt-7 rounded-3xl bg-[#163e32] px-7 py-12 text-white md:px-12"><div className="text-6xl" aria-hidden>{c.emoji}</div><p className="mt-7 text-sm uppercase tracking-widest text-emerald-200">{c.category}</p><h1 className="mt-3 text-4xl font-black">{c.name}</h1><p className="mt-5 max-w-2xl text-lg text-emerald-100">{c.description}</p><p className="mt-6 inline-block rounded-full bg-white/15 px-4 py-2 text-sm font-semibold">{list.length} discoveries</p></section>
+<section className="mt-10"><div className="mb-5"><h2 className="text-2xl font-black">Discoveries in this collection</h2><p className="mt-2 text-sm text-slate-600">Explore the starter catalog. Completion tracking will arrive with user accounts.</p></div><DiscoveryFilter discoveries={list}/></section>
+</main>;}

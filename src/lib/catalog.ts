@@ -1,3 +1,10 @@
 import collections from "../../data/collections.json";
-export const allCollections = collections.filter((c) => c.status === "published");
-export function getCollection(slug: string) {return allCollections.find((c) => c.slug === slug);}
+import discoveries from "../../data/discoveries.json";
+export type Discovery = (typeof discoveries)[number];
+export type Collection = (typeof collections)[number];
+export const allCollections: Collection[] = collections.filter(c=>c.status==="published");
+export const allDiscoveries: Discovery[] = discoveries.filter(d=>d.status==="published");
+export const getCollection=(slug:string)=>allCollections.find(c=>c.slug===slug);
+export const getDiscovery=(slug:string)=>allDiscoveries.find(d=>d.slug===slug);
+export const getCollectionDiscoveries=(slug:string)=>{const c=getCollection(slug);return c?c.discoverySlugs.map(getDiscovery).filter((d):d is Discovery=>Boolean(d)):[]};
+export const getDiscoveryCollections=(slug:string)=>allCollections.filter(c=>c.discoverySlugs.includes(slug));

@@ -2,46 +2,108 @@
   {
     "slug": "portland-explorer",
     "name": "Portland Explorer",
-    "description": "Discover the places, viewpoints, and neighborhoods that define Portland.",
+    "description": "Discover the parks, viewpoints, neighborhoods, and landmarks that define Portland.",
     "category": "City adventures",
     "emoji": "🌲",
     "status": "published",
-    "discoverySlugs": []
+    "discoverySlugs": [
+      "washington-park",
+      "portland-japanese-garden",
+      "international-rose-test-garden",
+      "pittock-mansion",
+      "forest-park",
+      "powell-butte-nature-park",
+      "mount-tabor-park",
+      "council-crest-park",
+      "oaks-bottom-wildlife-refuge",
+      "crystal-springs-rhododendron-garden",
+      "hoyt-arboretum",
+      "cathedral-park",
+      "kelley-point-park",
+      "tryon-creek-state-natural-area",
+      "eastbank-esplanade",
+      "rocky-butte-natural-area"
+    ]
   },
   {
     "slug": "columbia-gorge-waterfalls",
     "name": "Columbia Gorge Waterfalls",
-    "description": "Experience the dramatic waterfalls of the Columbia River Gorge.",
+    "description": "Explore the dramatic waterfalls and lush ravines of the Columbia River Gorge.",
     "category": "Waterfalls",
     "emoji": "💧",
     "status": "published",
-    "discoverySlugs": []
+    "discoverySlugs": [
+      "multnomah-falls",
+      "latourell-falls",
+      "bridal-veil-falls",
+      "wahkeena-falls",
+      "horsetail-falls",
+      "ponytail-falls",
+      "elowah-falls",
+      "wahclella-falls",
+      "dry-creek-falls",
+      "starvation-creek-falls"
+    ]
   },
   {
     "slug": "oregon-coast-highlights",
     "name": "Oregon Coast Highlights",
-    "description": "Explore headlands, beaches, and remarkable coastal landmarks.",
+    "description": "Explore headlands, beaches, tidepools, and distinctive coastal landmarks.",
     "category": "Coastal escapes",
     "emoji": "🌊",
     "status": "published",
-    "discoverySlugs": []
+    "discoverySlugs": [
+      "haystack-rock",
+      "ecola-state-park",
+      "cape-kiwanda",
+      "cape-perpetua-scenic-area",
+      "heceta-head-lighthouse",
+      "thors-well",
+      "samuel-h-boardman-state-scenic-corridor",
+      "cape-lookout-state-park",
+      "oswald-west-state-park",
+      "yaquina-head-outstanding-natural-area",
+      "fort-stevens-state-park",
+      "face-rock-state-scenic-viewpoint"
+    ]
   },
   {
     "slug": "oregon-fire-lookouts",
     "name": "Oregon Fire Lookouts",
-    "description": "Seek out the historic lookouts and panoramic views of Oregon.",
+    "description": "Seek out historic lookout sites and big views across Oregon's forests and mountains.",
     "category": "High places",
     "emoji": "🔭",
     "status": "published",
-    "discoverySlugs": []
+    "discoverySlugs": [
+      "black-butte-lookout",
+      "gold-butte-lookout",
+      "fivemile-butte-lookout",
+      "clear-lake-butte-lookout",
+      "warner-mountain-lookout",
+      "bald-butte-lookout",
+      "dutchman-peak-lookout",
+      "mount-bolivar-lookout"
+    ]
   },
   {
     "slug": "oregon-volcanoes",
     "name": "Oregon Volcanoes",
-    "description": "Discover Oregon’s iconic volcanic peaks and landscapes.",
+    "description": "Explore Oregon’s volcanic peaks, from familiar landmarks to rugged Cascade summits.",
     "category": "Mountain adventures",
     "emoji": "🏔️",
     "status": "published",
-    "discoverySlugs": []
+    "discoverySlugs": [
+      "mount-hood",
+      "mount-jefferson",
+      "north-sister",
+      "middle-sister",
+      "south-sister",
+      "mount-bachelor",
+      "mount-mcloughlin",
+      "mount-thielsen",
+      "mount-washington",
+      "three-fingered-jack",
+      "mount-bailey"
+    ]
   }
 ]
