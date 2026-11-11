@@ -139,5 +139,111 @@
       "History"
     ],
     "reviewStatus": "editorial-reviewed"
+  },
+  "mount-adams-circumnavigation": {
+    "eyebrow": "Advanced route · Off-trail navigation",
+    "description": "Circle Mount Adams on an advanced route combining established paths and cross-country sections. The mountain does not have a continuous maintained trail loop; Yakama Nation lands have separate access regulations.",
+    "highlights": [
+      "Complete a full circuit rather than a summit visit",
+      "Experience multiple sides of the landscape",
+      "Plan an ambitious mountain adventure"
+    ],
+    "whatToKnow": "Off-trail navigation is required. Check closures, permits and Yakama Nation access rules before route planning; do not assume all potential sections are open.",
+    "officialUrl": "https://www.wta.org/go-hiking/hikes/round-the-mountain",
+    "sourceName": "Washington Trails Association",
+    "activities": [
+      "Off-trail navigation",
+      "Backpacking"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "mount-st-helens-circumnavigation": {
+    "eyebrow": "Loowit Trail · Demanding loop",
+    "description": "Complete the Loowit Trail circuit around Mount St. Helens, crossing rugged gullies, volcanic plains and exposed landscapes. A full circuit is different from hiking a shorter Loowit segment.",
+    "highlights": [
+      "Complete a full circuit rather than a summit visit",
+      "Experience multiple sides of the landscape",
+      "Plan an ambitious mountain adventure"
+    ],
+    "whatToKnow": "Check current WTA and Forest Service closures, campsites, access rules, water and terrain changes. Washouts and stream crossings can be serious obstacles.",
+    "officialUrl": "https://www.wta.org/go-hiking/hikes/loowit",
+    "sourceName": "Washington Trails Association",
+    "activities": [
+      "Hiking",
+      "Backpacking",
+      "Trail running"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "mount-jefferson-circumnavigation": {
+    "eyebrow": "Advanced route · Off-trail navigation",
+    "description": "A full circuit of Mount Jefferson is a demanding cross-country challenge, not a designated or continuous maintained hiking loop. It requires careful independent route research.",
+    "highlights": [
+      "Complete a full circuit rather than a summit visit",
+      "Experience multiple sides of the landscape",
+      "Plan an ambitious mountain adventure"
+    ],
+    "whatToKnow": "Complex terrain, snow, drainage crossings, wildfire damage, closures, permits and access can affect feasibility. This is a challenge concept, not navigation guidance.",
+    "officialUrl": "https://www.fs.usda.gov/r06/willamette/recreation/mount-jefferson-wilderness",
+    "sourceName": "U.S. Forest Service",
+    "activities": [
+      "Off-trail navigation",
+      "Backpacking"
+    ],
+    "reviewStatus": "starter"
+  },
+  "mount-hood-circumnavigation": {
+    "eyebrow": "Timberline Trail · Classic loop",
+    "description": "Circle Mount Hood on the famous Timberline Trail, passing alpine meadows, forests, ridgelines and glacial drainages. A full loop is separate from a summit ascent.",
+    "highlights": [
+      "Complete a full circuit rather than a summit visit",
+      "Experience multiple sides of the landscape",
+      "Plan an ambitious mountain adventure"
+    ],
+    "whatToKnow": "Glacial stream crossings may be dangerous and conditions change rapidly. Check current trail conditions, weather, closures and permits.",
+    "officialUrl": "https://www.wta.org/go-hiking/hikes/timberline-trail",
+    "sourceName": "Washington Trails Association",
+    "activities": [
+      "Hiking",
+      "Backpacking",
+      "Trail running"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "crater-lake-circumnavigation": {
+    "eyebrow": "Rim circuit · No continuous hiking trail",
+    "description": "Crater Lake offers spectacular rim viewpoints and short trails, but the NPS does not describe a continuous designated hiking trail for a full on-foot circumnavigation. This is a complex, self-planned concept, not a verified hiking route.",
+    "highlights": [
+      "Complete a full circuit rather than a summit visit",
+      "Experience multiple sides of the landscape",
+      "Plan an ambitious mountain adventure"
+    ],
+    "whatToKnow": "Do not assume Rim Drive is a safe or permitted pedestrian trail or that cross-country travel is allowed. Verify any planned route, restrictions and traffic safety directly with the National Park Service.",
+    "officialUrl": "https://www.nps.gov/crla/planyourvisit/hiking.htm",
+    "sourceName": "National Park Service",
+    "activities": [
+      "Hiking",
+      "Backpacking",
+      "Trail running"
+    ],
+    "reviewStatus": "starter"
+  },
+  "three-fingered-jack-circumnavigation": {
+    "eyebrow": "Santiam Pass · Trail circuit",
+    "description": "A loop around Three Fingered Jack connects the Pacific Crest Trail and other trails, passing lakes, meadows and volcanic viewpoints. It does not require climbing the exposed summit.",
+    "highlights": [
+      "Complete a full circuit rather than a summit visit",
+      "Experience multiple sides of the landscape",
+      "Plan an ambitious mountain adventure"
+    ],
+    "whatToKnow": "Confirm the specific loop variant and its trail junctions, access conditions, snow, water and applicable Central Cascades Wilderness permits.",
+    "officialUrl": "https://www.hikeoregon.net/three-fingered-jack-loop.html",
+    "sourceName": "Hike Oregon",
+    "activities": [
+      "Hiking",
+      "Backpacking",
+      "Trail running"
+    ],
+    "reviewStatus": "editorial-reviewed"
   }
 }

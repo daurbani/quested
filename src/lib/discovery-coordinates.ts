@@ -228,5 +228,11 @@ export const discoveryCoordinates:Record<string,readonly [number,number]> = {
  "mount-bailey": [
   43.155,
   -122.22
- ]
+ ],
+ "mount-adams-circumnavigation": [46.2, -121.49],
+ "mount-st-helens-circumnavigation": [46.185, -122.2],
+ "mount-jefferson-circumnavigation": [44.66, -121.83],
+ "mount-hood-circumnavigation": [45.392, -121.73],
+ "crater-lake-circumnavigation": [42.95, -122.12],
+ "three-fingered-jack-circumnavigation": [44.492, -121.815]
 };

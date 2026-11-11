@@ -135,5 +135,21 @@
       "middle-sister",
       "south-sister"
     ]
+  },
+  {
+    "slug": "trail-circumnavigations",
+    "name": "Trail Circumnavigations",
+    "description": "Circle iconic Cascade peaks and Crater Lake—from the Timberline and Loowit Trails to advanced off-trail challenges. These full loops are distinct from summit visits, and routes vary greatly in access and difficulty.",
+    "category": "Mountain adventures",
+    "emoji": "🔄",
+    "status": "published",
+    "discoverySlugs": [
+      "mount-adams-circumnavigation",
+      "mount-st-helens-circumnavigation",
+      "mount-jefferson-circumnavigation",
+      "mount-hood-circumnavigation",
+      "crater-lake-circumnavigation",
+      "three-fingered-jack-circumnavigation"
+    ]
   }
 ]

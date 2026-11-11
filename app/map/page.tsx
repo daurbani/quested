@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
 import Link from "next/link";
 import ExploreMap from "@/components/explore-map";
-export const metadata:Metadata={title:"Explore Map | Quested",description:"Find places to explore across Oregon, save future adventures, and track completed discoveries."};
+export const metadata:Metadata={title:"Explore Map | Quested",description:"Find places to explore across Oregon and southwest Washington, save future adventures, and track completed discoveries."};
 export default function MapPage(){return <main className="mx-auto max-w-7xl px-4 py-9 sm:px-5"><p className="text-xs font-black uppercase tracking-[.2em] text-emerald-700">Your next adventure is out there</p><h1 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">Explore the map</h1><p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">Find your next waterfall, viewpoint, coastline or summit. Tap a pin to learn more, then save it to Want to Go or mark a visit complete.</p><ExploreMap/><p className="mt-7 text-xs leading-5 text-slate-500">Map markers show approximate destinations only and are not for navigation. Map tiles © OpenStreetMap contributors. <Link href="/collections" className="font-semibold text-emerald-800 underline">Browse collections instead →</Link></p></main>}

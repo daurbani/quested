@@ -1,7 +1,7 @@
 "use client";
 import {useEffect,useMemo,useState} from "react";
 import Link from "next/link";
-import {allCollections,type Collection} from "@/lib/catalog";
+import {allCollections,allDiscoveries,type Collection} from "@/lib/catalog";
 import {supabaseBrowser} from "@/lib/supabase/client";
 import CollectionCard from "@/components/collection-card";
 import {photoForCollection} from "@/lib/media";
@@ -61,7 +61,7 @@ export default function HomeExperience(){
    </div>
    {state==="error"&&<p className="mt-2 text-xs text-slate-500">Your personal progress is temporarily unavailable. Collections are still open to explore.</p>}
   </section>
-  <section className="mt-7 rounded-2xl border border-emerald-200 bg-white p-5 sm:flex sm:items-center sm:justify-between"><div><p className="text-xs font-black uppercase tracking-widest text-emerald-700">New · Adventure Map</p><h2 className="mt-2 text-xl font-black">Find somewhere new to explore</h2><p className="mt-2 text-sm text-slate-600">Browse 57 Oregon destinations on a map and save the ones you want to visit.</p></div><Link href="/map" className="mt-4 inline-flex shrink-0 items-center justify-center rounded-full bg-[#163e32] px-5 py-3 text-sm font-bold !text-white hover:bg-[#205846] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 sm:mt-0" style={{color:"#ffffff"}}>Open map →</Link></section>
+  <section className="mt-7 rounded-2xl border border-emerald-200 bg-white p-5 sm:flex sm:items-center sm:justify-between"><div><p className="text-xs font-black uppercase tracking-widest text-emerald-700">New · Adventure Map</p><h2 className="mt-2 text-xl font-black">Find somewhere new to explore</h2><p className="mt-2 text-sm text-slate-600">Browse {allDiscoveries.length} Pacific Northwest destinations on a map and save the ones you want to visit.</p></div><Link href="/map" className="mt-4 inline-flex shrink-0 items-center justify-center rounded-full bg-[#163e32] px-5 py-3 text-sm font-bold !text-white hover:bg-[#205846] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 sm:mt-0" style={{color:"#ffffff"}}>Open map →</Link></section>
   <section className="pt-9 pb-6 sm:pt-10">
    <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
     <div><p className="text-xs font-black uppercase tracking-[.18em] text-emerald-700">Explore Oregon</p>
