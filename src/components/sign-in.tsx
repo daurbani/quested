@@ -4,7 +4,7 @@ import Link from "next/link";
 import {isConfigured,supabaseBrowser} from "@/lib/supabase/client";
 export default function SignIn({next}:{next:string}){
  const [busy,setBusy]=useState(false),[error,setError]=useState(""),[email,setEmail]=useState(""),[sent,setSent]=useState(false);
- const safeNext=next.startsWith("/")&&!next.startsWith("//")?next:"/my-quested";
+ const safeNext=next.startsWith("/")&&!next.startsWith("//")&&!next.startsWith("/\\")?next:"/my-quested";
  const redirectTo=()=>location.origin+"/auth/callback?next="+encodeURIComponent(safeNext);
  async function login(provider:"google"|"apple"){const sb=supabaseBrowser();if(!sb)return;setBusy(true);setError("");const {error}=await sb.auth.signInWithOAuth({provider,options:{redirectTo:redirectTo()}});if(error){setError(error.message);setBusy(false)}}
  async function emailLogin(){const sb=supabaseBrowser();if(!sb)return;setBusy(true);setError("");const {error}=await sb.auth.signInWithOtp({email,options:{emailRedirectTo:redirectTo()}});if(error)setError(error.message);else setSent(true);setBusy(false)}
