@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "portland-explorer",
+    "name": "Portland Explorer",
+    "description": "Discover the places, viewpoints, and neighborhoods that define Portland.",
+    "category": "City adventures",
+    "emoji": "🌲",
+    "status": "published",
+    "discoverySlugs": []
+  },
+  {
+    "slug": "columbia-gorge-waterfalls",
+    "name": "Columbia Gorge Waterfalls",
+    "description": "Experience the dramatic waterfalls of the Columbia River Gorge.",
+    "category": "Waterfalls",
+    "emoji": "💧",
+    "status": "published",
+    "discoverySlugs": []
+  },
+  {
+    "slug": "oregon-coast-highlights",
+    "name": "Oregon Coast Highlights",
+    "description": "Explore headlands, beaches, and remarkable coastal landmarks.",
+    "category": "Coastal escapes",
+    "emoji": "🌊",
+    "status": "published",
+    "discoverySlugs": []
+  },
+  {
+    "slug": "oregon-fire-lookouts",
+    "name": "Oregon Fire Lookouts",
+    "description": "Seek out the historic lookouts and panoramic views of Oregon.",
+    "category": "High places",
+    "emoji": "🔭",
+    "status": "published",
+    "discoverySlugs": []
+  },
+  {
+    "slug": "oregon-volcanoes",
+    "name": "Oregon Volcanoes",
+    "description": "Discover Oregon’s iconic volcanic peaks and landscapes.",
+    "category": "Mountain adventures",
+    "emoji": "🏔️",
+    "status": "published",
+    "discoverySlugs": []
+  }
+]
