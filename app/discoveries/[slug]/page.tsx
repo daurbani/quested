@@ -15,7 +15,7 @@ export default async function DiscoveryDetailPage({params}:{params:Promise<{slug
  return <main className="mx-auto max-w-5xl px-5 py-12">
   <Link href="/collections" className="text-sm font-semibold text-emerald-800 hover:underline">← Explore collections</Link>
   <section className="relative isolate mt-7 overflow-hidden rounded-3xl bg-gradient-to-br from-[#163e32] via-[#276d58] to-[#3c8063] px-7 py-14 text-white md:px-12 md:py-20">
-   {photo&&<div aria-hidden className="absolute inset-0"><PhotoImage photo={photo} width={1400} className="h-full w-full object-cover"/></div>}
+   {photo&&<div aria-hidden className="absolute inset-0"><PhotoImage photo={photo} width={1400} priority className="h-full w-full object-cover"/></div>}
    <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-[#092a23]/95 via-[#092a23]/75 to-[#092a23]/25"/>
    <div aria-hidden className="pointer-events-none absolute -bottom-40 -right-24 h-96 w-96 rounded-full border-[55px] border-white/5"/>
    <p className="relative text-sm font-bold uppercase tracking-[.16em] text-emerald-200">{detail?.eyebrow??d.region}</p>

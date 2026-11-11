@@ -7,7 +7,7 @@ export default function Home(){
  const photo=photoForCollection("portland-explorer");
  return <main className="mx-auto max-w-6xl px-5 py-10 md:py-12">
   <section className="relative isolate overflow-hidden rounded-[2rem] bg-[#163e32] text-white">
-   {photo&&<div aria-hidden className="absolute inset-0"><PhotoImage photo={photo} width={1600} className="h-full w-full object-cover"/></div>}
+   {photo&&<div aria-hidden className="absolute inset-0"><PhotoImage photo={photo} width={1600} priority className="h-full w-full object-cover"/></div>}
    <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-[#092a23]/95 via-[#092a23]/80 to-[#092a23]/25"/>
    <div className="relative px-7 pb-24 pt-20 md:px-14 md:pb-32 md:pt-28">
     <p className="text-xs font-bold uppercase tracking-[.24em] text-emerald-100">Your next adventure starts here</p>
