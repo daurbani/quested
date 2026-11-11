@@ -15,8 +15,8 @@ export default function Home(){
      <h1 className="mt-3 text-4xl font-black leading-[1.04] tracking-tight sm:text-5xl">Go places.<br/>Collect stories.</h1>
      <p className="mt-4 max-w-lg text-sm leading-6 text-emerald-50 sm:text-base">Discover remarkable places, complete curated collections, and watch one adventure advance multiple goals.</p>
      <div className="mt-6 flex flex-wrap gap-3">
-      <Link href="/collections" className="hero-cta text-sm">Explore collections <span aria-hidden className="ml-2">→</span></Link>
-      <Link href="/my-quested" className="inline-flex items-center justify-center rounded-full border border-white/60 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10">My Quested</Link>
+      <Link href="/map" className="hero-cta text-sm">Explore the map <span aria-hidden className="ml-2">→</span></Link>
+      <Link href="/collections" className="inline-flex items-center justify-center rounded-full border border-white/60 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10">Browse collections</Link>
      </div>
      <div className="mt-6 flex flex-wrap gap-x-7 gap-y-2 border-t border-white/20 pt-4 text-sm text-emerald-50">
       <span><strong className="text-lg font-black text-white">{allCollections.length}</strong> collections</span>
