@@ -17,14 +17,14 @@ export default function WelcomeExperience(){
   let active=true;
   void sb.auth.getUser().then(async({data,error})=>{
    if(!active)return;
-   if(error){setError("We couldn't confirm your session. Try signing in again.");setStatus("error");return;}
+   if(error){setError("We couldn’t confirm your session. Try signing in again.");setStatus("error");return;}
    if(!data.user){setStatus("signed-out");return;}
    const result=await sb.from("user_discoveries").select("discovery_slug").eq("user_id",data.user.id);
    if(!active)return;
-   if(result.error){setError("Your account is ready, but saved discoveries couldn't be loaded.");setStatus("error");return;}
+   if(result.error){setError("Your account is ready, but saved discoveries couldn’t be loaded.");setStatus("error");return;}
    setCompleted(new Set((result.data??[]).map(row=>row.discovery_slug)).size);
    setStatus("ready");
-  }).catch(()=>{if(active){setError("We couldn't load your account.");setStatus("error")}});
+  }).catch(()=>{if(active){setError("We couldn’t load your account.");setStatus("error")}});
   return()=>{active=false};
  },[]);
  const collections=useMemo(()=>featured.map(slug=>allCollections.find(c=>c.slug===slug)).filter((c):c is (typeof allCollections)[number]=>Boolean(c)),[]);
@@ -44,14 +44,14 @@ export default function WelcomeExperience(){
   </section>}
   {status==="error"&&<section role="alert" className="mt-5 rounded-xl bg-amber-50 p-5 text-sm text-amber-900">{error} <Link href="/sign-in?next=/welcome" className="font-bold underline">Sign in again</Link></section>}
   {status==="ready"&&<section className="mt-5 rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
-   <p className="text-xs font-black uppercase tracking-widest text-emerald-800">✓ You're signed in</p>
-   <p className="mt-2 font-semibold text-emerald-950">{completed>0?`You already have ${completed} ${completed===1?"discovery":"discoveries"} in your adventure record. Keep going!`:"Your Quested account is ready. Start by adding a place you've visited."}</p>
+   <p className="text-xs font-black uppercase tracking-widest text-emerald-800">✓ You’re signed in</p>
+   <p className="mt-2 font-semibold text-emerald-950">{completed>0?`You already have ${completed} ${completed===1?"discovery":"discoveries"} in your adventure record. Keep going!`:"Your Quested account is ready. Start by adding a place you’ve visited."}</p>
    {completed>0&&<Link href="/my-quested" className="mt-3 inline-block text-sm font-bold text-emerald-800 underline">Go to My Quested →</Link>}
   </section>}
   <section className="mt-8" aria-label="How Quested works">
    <p className="text-xs font-bold uppercase tracking-[.17em] text-emerald-800">Three easy steps</p>
    <div className="mt-3 grid gap-3 sm:grid-cols-3">
-    {[["01","Pick a collection","Choose a theme that interests you, from local parks to alpine peaks."],["02","Record a discovery","Open a place you've visited. Tap “Add or edit past visit”—the date is optional."],["03","Watch your progress grow","Every recorded visit advances all collections that include that place."]].map(([number,title,description])=><div key={number} className="rounded-2xl bg-white p-5 shadow-sm"><span className="text-xs font-black text-emerald-800">{number}</span><h2 className="mt-2 text-lg font-black">{title}</h2><p className="mt-2 text-sm leading-6 text-slate-600">{description}</p></div>)}
+    {[["01","Pick a collection","Choose a theme that interests you, from local parks to alpine peaks."],["02","Record a discovery","Open a place you’ve visited. Tap “Add or edit past visit”—the date is optional."],["03","Watch your progress grow","Every recorded visit advances all collections that include that place."]].map(([number,title,description])=><div key={number} className="rounded-2xl bg-white p-5 shadow-sm"><span className="text-xs font-black text-emerald-800">{number}</span><h2 className="mt-2 text-lg font-black">{title}</h2><p className="mt-2 text-sm leading-6 text-slate-600">{description}</p></div>)}
    </div>
   </section>
   <section className="mt-9">
@@ -67,6 +67,6 @@ export default function WelcomeExperience(){
    <p className="mt-2 text-sm leading-6 text-slate-600">Record your visit once, and it contributes to both Portland Explorer and Portland Viewpoints. Start with an easy, familiar destination.</p>
    <Link href="/discoveries/pittock-mansion" className="mt-4 inline-block text-sm font-bold text-emerald-800 underline">See how a discovery works →</Link>
   </section>
-  <p className="mt-7 text-center text-xs leading-5 text-slate-500">Quested is an early beta with an Oregon-focused catalog. We're improving it with feedback from the first explorers.</p>
+  <p className="mt-7 text-center text-xs leading-5 text-slate-500">Quested is an early beta with an Oregon-focused catalog. We’re improving it with feedback from the first explorers.</p>
  </div>;
 }
