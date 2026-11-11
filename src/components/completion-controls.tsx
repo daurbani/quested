@@ -2,6 +2,7 @@
 import {useCallback,useEffect,useState} from "react";
 import Link from "next/link";
 import {supabaseBrowser,isConfigured} from "@/lib/supabase/client";
+import {recordBetaEvent} from "@/lib/beta-analytics";
 import {localToday,prettyDate,type Completion} from "@/lib/completions";
 type Intent={slug:string;type:"new"|"historical";date:string|null};
 type RelatedCollection={slug:string;name:string;emoji:string;discoverySlugs:string[]};
@@ -23,12 +24,14 @@ export default function CompletionControls({slug,collections}:{slug:string;colle
   },{onConflict:"user_id,discovery_slug"});
   if(error){setNotice("Could not save: "+error.message);setBusy(false);return;}
   await refresh(id);setPast(false);
+  void recordBetaEvent(id,"discovery_saved",alreadyRecorded?"updated":"first_or_new");
   const result=await sb.from("user_discoveries").select("discovery_slug").eq("user_id",id);
   if(result.error){
    setNotice("Visit saved. Collection progress will appear when you open My Quested.");
   }else{
    const done=new Set((result.data??[]).map(item=>item.discovery_slug as string));
    setImpact(collections.map(c=>({slug:c.slug,name:c.name,emoji:c.emoji,count:c.discoverySlugs.filter(s=>done.has(s)).length,total:c.discoverySlugs.length,advanced:!alreadyRecorded&&!prior.error})));
+   if(!alreadyRecorded&&!prior.error)for(const c of collections){if(c.discoverySlugs.length>0&&c.discoverySlugs.every(s=>done.has(s)))void recordBetaEvent(id,"collection_mastered",c.slug);}
    setNotice(prior.error?"Visit saved.":"Visit saved — your collection progress is up to date.");
   }
   setBusy(false);
