@@ -32,7 +32,8 @@ const collectionPhoto:Record<string,string>={
  "oregon-fire-lookouts":"black-butte-lookout",
  "oregon-volcanoes":"mount-hood",
  "portland-viewpoints":"portland",
- "cascade-summit-circuit":"mount-hood"
+ "cascade-summit-circuit":"mount-hood",
+ "trail-circumnavigations":"mount-hood"
 };
 export function photoForDiscovery(slug:string){return photos[slug];}
 export function photoForCollection(slug:string){return photos[collectionPhoto[slug]];}

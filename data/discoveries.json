@@ -511,5 +511,59 @@
     "category": "Mountain adventures",
     "status": "published",
     "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-adams-circumnavigation",
+    "name": "Mount Adams Circumnavigation",
+    "region": "Southwest Washington",
+    "summary": "Advanced, partly off-trail loop requiring route-finding and careful access planning.",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-st-helens-circumnavigation",
+    "name": "Mount St. Helens — Loowit Trail",
+    "region": "Southwest Washington",
+    "summary": "Rugged full loop via Loowit Trail through pumice, gullies, and volcanic landscapes.",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-jefferson-circumnavigation",
+    "name": "Mount Jefferson Circumnavigation",
+    "region": "Central Oregon Cascades",
+    "summary": "Advanced around-the-mountain objective without a continuous maintained loop trail.",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-hood-circumnavigation",
+    "name": "Mount Hood — Timberline Trail",
+    "region": "Northern Oregon Cascades",
+    "summary": "Classic mountain loop around Mount Hood, with alpine terrain and river crossings.",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "crater-lake-circumnavigation",
+    "name": "Crater Lake Rim Circuit",
+    "region": "Southern Oregon Cascades",
+    "summary": "Self-planned full on-foot circuit concept; no continuous maintained hiking trail circles the lake.",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "three-fingered-jack-circumnavigation",
+    "name": "Three Fingered Jack Loop",
+    "region": "Central Oregon Cascades",
+    "summary": "Trail-based loop using the PCT and connecting trails around the volcanic spire.",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
   }
 ]

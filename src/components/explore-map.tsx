@@ -71,7 +71,7 @@ export default function ExploreMap(){
   </div>
   <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_330px]">
    <div className="relative min-h-[440px] overflow-hidden rounded-2xl bg-[#dae7d7] shadow-sm">
-    <div ref={container} aria-label="Interactive map of Oregon adventures" className="absolute inset-0 z-0"/>
+    <div ref={container} aria-label="Interactive map of Pacific Northwest adventures" className="absolute inset-0 z-0"/>
     {!loaded&&!mapError&&<p role="status" className="absolute left-4 top-4 rounded-xl bg-white px-4 py-2 text-sm shadow">Loading the adventure map…</p>}
     {mapError&&<p role="alert" className="absolute left-4 top-4 right-4 rounded-xl bg-white px-4 py-3 text-sm text-slate-700 shadow">Map tiles or scripts could not load. You can still explore the discovery list beside the map.</p>}
     <div className="absolute bottom-6 left-3 z-[400] flex flex-wrap gap-2 rounded-lg bg-white/95 px-3 py-2 text-[11px] font-bold shadow"><span className="text-[#315c87]">● To explore</span><span className="text-[#be7b21]">● Want to Go</span><span className="text-[#17785e]">● Completed</span></div>
