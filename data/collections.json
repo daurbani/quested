@@ -105,5 +105,35 @@
       "three-fingered-jack",
       "mount-bailey"
     ]
+  },
+  {
+    "slug": "portland-viewpoints",
+    "name": "Portland Viewpoints",
+    "description": "Chase remarkable city and mountain views from five of Portland's favorite high places.",
+    "category": "City adventures",
+    "emoji": "🌄",
+    "status": "published",
+    "discoverySlugs": [
+      "pittock-mansion",
+      "powell-butte-nature-park",
+      "mount-tabor-park",
+      "council-crest-park",
+      "rocky-butte-natural-area"
+    ]
+  },
+  {
+    "slug": "cascade-summit-circuit",
+    "name": "Cascade Summit Circuit",
+    "description": "A long-term alpine challenge linking five major peaks in Oregon's Cascade Range. These are technical mountain objectives, not ordinary hikes.",
+    "category": "Mountain adventures",
+    "emoji": "⛰️",
+    "status": "published",
+    "discoverySlugs": [
+      "mount-hood",
+      "mount-jefferson",
+      "north-sister",
+      "middle-sister",
+      "south-sister"
+    ]
   }
 ]

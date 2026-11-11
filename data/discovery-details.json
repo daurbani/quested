@@ -1,0 +1,143 @@
+{
+  "mount-hood": {
+    "eyebrow": "Cascade summit · Alpine climbing",
+    "description": "Oregon’s highest mountain is an iconic Cascade volcano whose upper slopes demand technical snow-and-ice travel. A summit attempt is a serious alpine objective, with conditions that can change quickly and hazards including falling ice, crevasses and avalanches.",
+    "highlights": [
+      "Glaciated volcanic summit",
+      "Technical alpine climbing conditions",
+      "Views across Oregon and Washington on clear days"
+    ],
+    "whatToKnow": "Mount Hood climbing permits are required for travel above 9,500 feet. Review current Forest Service climbing reports, weather, avalanche information and route requirements before planning any ascent.",
+    "officialUrl": "https://www.fs.usda.gov/media/158935",
+    "sourceName": "US Forest Service climbing statement",
+    "activities": [
+      "Mountaineering",
+      "Snow and ice travel"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "washington-park": {
+    "eyebrow": "Urban park · Gardens and culture",
+    "description": "Washington Park brings together major gardens, forest paths, cultural destinations and the Oregon Zoo in Portland’s West Hills. The park rewards both a short wander and a day of exploring, with several distinct Quested discoveries within its boundaries.",
+    "highlights": [
+      "International Rose Test Garden",
+      "Portland Japanese Garden",
+      "Hoyt Arboretum and forest paths"
+    ],
+    "whatToKnow": "Parking can be limited. The MAX light rail serves Washington Park, and a seasonal shuttle connects attractions. Check each destination’s visiting requirements separately.",
+    "officialUrl": "https://www.portland.gov/parks/washington-park",
+    "sourceName": "Portland Parks & Recreation",
+    "activities": [
+      "Walking",
+      "Gardens",
+      "Urban exploring"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "forest-park": {
+    "eyebrow": "Urban wilderness · Trail network",
+    "description": "Forest Park offers a sweeping network of wooded trails and quiet ravines just beyond Portland’s urban core. The Wildwood Trail anchors a landscape of forest walks, trail runs and wildlife habitat.",
+    "highlights": [
+      "More than 80 miles of trails",
+      "Wildwood Trail",
+      "Numerous entry points and route options"
+    ],
+    "whatToKnow": "Choose an appropriate trailhead and route; surfaces and elevation changes vary. Check Portland Parks trail alerts for closures and storm damage before you go.",
+    "officialUrl": "https://www.portland.gov/parks/forest-park",
+    "sourceName": "Portland Parks & Recreation",
+    "activities": [
+      "Hiking",
+      "Trail running",
+      "Nature"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "powell-butte-nature-park": {
+    "eyebrow": "Volcanic landscape · Open views",
+    "description": "An extinct cinder cone in southeast Portland, Powell Butte mixes broad grassy meadows with forest and a network of trails. On a clear day, its open terrain invites expansive views toward the Cascades.",
+    "highlights": [
+      "Meadow and forest trails",
+      "Views toward Cascade peaks",
+      "Walking, cycling and equestrian routes"
+    ],
+    "whatToKnow": "Stay on designated routes and keep dogs leashed. The main entrance or parking gate may close during freezing conditions.",
+    "officialUrl": "https://www.portland.gov/parks/powell-butte-nature-park",
+    "sourceName": "Portland Parks & Recreation",
+    "activities": [
+      "Hiking",
+      "Cycling",
+      "Viewpoints"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "mount-tabor-park": {
+    "eyebrow": "Urban volcano · Neighborhood trails",
+    "description": "Mount Tabor rises from southeast Portland on an extinct volcanic cinder cone, blending mature trees, stairways, scenic overlooks and historic reservoirs. It is an approachable place for a sunset walk or an urban hill workout.",
+    "highlights": [
+      "Extinct volcanic cinder cone",
+      "Historic reservoirs",
+      "Wooded and paved pathways"
+    ],
+    "whatToKnow": "Some roads are closed to vehicles at designated times, and ongoing construction may affect a few paths. Check park updates before visiting.",
+    "officialUrl": "https://www.portland.gov/parks/mt-tabor-park",
+    "sourceName": "Portland Parks & Recreation",
+    "activities": [
+      "Walking",
+      "Trail running",
+      "Viewpoints"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "council-crest-park": {
+    "eyebrow": "Hilltop viewpoint · City panorama",
+    "description": "Council Crest sits high above southwest Portland and opens up sweeping views of the city and surrounding landscape. On clear days, Cascade mountains punctuate the horizon.",
+    "highlights": [
+      "High city viewpoint",
+      "Cascade mountain views",
+      "Short paths and open lawn"
+    ],
+    "whatToKnow": "Vehicle access hours are seasonal; the park can be visited on foot beyond the vehicle gate. Check posted access and weather conditions.",
+    "officialUrl": "https://www.portland.gov/parks/council-crest-park",
+    "sourceName": "Portland Parks & Recreation",
+    "activities": [
+      "Viewpoints",
+      "Walking"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "rocky-butte-natural-area": {
+    "eyebrow": "Volcanic viewpoint · Northeast Portland",
+    "description": "Rocky Butte is another remnant of Portland’s volcanic past. Its forested slopes rise to a hilltop viewpoint at Joseph Wood Hill Park, with an unusual mix of geology, city history and skyline views.",
+    "highlights": [
+      "Extinct cinder cone",
+      "Joseph Wood Hill Park viewpoint",
+      "Natural-area paths"
+    ],
+    "whatToKnow": "Vehicle access near the summit is seasonally restricted, and parking regulations vary. Review city park notices before visiting.",
+    "officialUrl": "https://www.portland.gov/parks/rocky-butte-natural-area",
+    "sourceName": "Portland Parks & Recreation",
+    "activities": [
+      "Viewpoints",
+      "Walking"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "pittock-mansion": {
+    "eyebrow": "Historic landmark · Panoramic views",
+    "description": "Pittock Mansion and its surrounding park offer a memorable perspective on Portland and the Cascade skyline. The landmark is also accessible from several Forest Park trail routes, connecting urban history with an outdoor adventure.",
+    "highlights": [
+      "Historic mansion and grounds",
+      "City overlook",
+      "Forest Park trail connections"
+    ],
+    "whatToKnow": "Mansion admission and park access are separate experiences. Parking arrangements and visiting hours can change; confirm details with the official park or attraction before visiting.",
+    "officialUrl": "https://www.portland.gov/parks/pittock-mansion",
+    "sourceName": "Portland Parks & Recreation",
+    "activities": [
+      "Viewpoints",
+      "Walking",
+      "History"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  }
+}
