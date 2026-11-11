@@ -4,7 +4,7 @@ import {allDiscoveries,getDiscovery,getDiscoveryCollections} from "@/lib/catalog
 import {getDiscoveryDetail} from "@/lib/discovery-details";
 import CompletionControls from "@/components/completion-controls";
 import {photoForDiscovery} from "@/lib/media";
-import {PhotoImage,PhotoCredit} from "@/components/photo";
+import {PhotoImage} from "@/components/photo";
 export function generateStaticParams(){return allDiscoveries.map(d=>({slug:d.slug}));}
 export default async function DiscoveryDetailPage({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params;
@@ -25,7 +25,6 @@ export default async function DiscoveryDetailPage({params}:{params:Promise<{slug
     <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold">{d.region}</span>
     {(detail?.activities??[]).map(activity=><span key={activity} className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold">{activity}</span>)}
    </div>
-   {photo&&<p className="relative mt-5 text-[10px]"><PhotoCredit photo={photo} light/></p>}
   </section>
   <div className="mt-8 grid gap-7 md:grid-cols-[minmax(0,1fr)_310px]">
    <div className="space-y-6">
