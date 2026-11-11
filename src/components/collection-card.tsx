@@ -2,7 +2,7 @@ import Link from "next/link";
 import type {Collection} from "@/lib/catalog";
 import {getCollectionDiscoveries} from "@/lib/catalog";
 import {photoForCollection} from "@/lib/media";
-import {PhotoCredit,PhotoImage} from "@/components/photo";
+import {PhotoImage} from "@/components/photo";
 export default function CollectionCard({collection}:{collection:Collection}){
  const photo=photoForCollection(collection.slug);
  const count=getCollectionDiscoveries(collection.slug).length;
@@ -21,6 +21,5 @@ export default function CollectionCard({collection}:{collection:Collection}){
    <span className="mt-5 inline-block font-bold text-emerald-800">Explore collection <span aria-hidden>→</span></span>
   </div>
  </Link>
- {photo&&<p className="border-t border-slate-100 px-6 py-2 text-[10px] leading-4"><PhotoCredit photo={photo}/></p>}
  </article>;
 }
