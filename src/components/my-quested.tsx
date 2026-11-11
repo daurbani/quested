@@ -7,7 +7,7 @@ import {isConfigured,supabaseBrowser} from "@/lib/supabase/client";
 type HistoryFilter="all"|"new"|"historical";
 export default function MyQuested(){
  const sb=supabaseBrowser();
- const [email,setEmail]=useState<string|null>(null),[entries,setEntries]=useState<Completion[]>([]),[loading,setLoading]=useState(true),[error,setError]=useState("");
+ const [email,setEmail]=useState<string|null>(null),[entries,setEntries]=useState<Completion[]>([]),[wanted,setWanted]=useState<{discovery_slug:string;created_at:string}[]>([]),[loading,setLoading]=useState(true),[error,setError]=useState("");
  const [historyFilter,setHistoryFilter]=useState<HistoryFilter>("all"),[showAll,setShowAll]=useState(false);
  useEffect(()=>{if(!sb){setLoading(false);return;}let active=true;
   void sb.auth.getUser().then(async({data,error})=>{
@@ -16,10 +16,12 @@ export default function MyQuested(){
    if(!data.user){setLoading(false);return;}
    setEmail(data.user.email??"Signed in");
    const response=await sb.from("user_discoveries").select("discovery_slug,completion_type,visited_on,created_at").eq("user_id",data.user.id).order("created_at",{ascending:false});
-   if(active){if(response.error)setError(response.error.message);else setEntries((response.data??[]) as Completion[]);setLoading(false)}
+   const wishes=await sb.from("user_want_to_go").select("discovery_slug,created_at").eq("user_id",data.user.id).order("created_at",{ascending:false});
+   if(active){if(response.error)setError(response.error.message);else setEntries((response.data??[]) as Completion[]);if(wishes.error)setError(wishes.error.message);else setWanted(wishes.data??[]);setLoading(false)}
   });return()=>{active=false};
  },[sb]);
  const done=useMemo(()=>new Set(entries.map(e=>e.discovery_slug)),[entries]);
+ const wantToGo=useMemo(()=>wanted.map(w=>({wish:w,discovery:allDiscoveries.find(d=>d.slug===w.discovery_slug)})).filter(x=>x.discovery&&!done.has(x.wish.discovery_slug)),[wanted,done]);
  const masteredCollections=useMemo(()=>allCollections.filter(c=>c.discoverySlugs.length>0&&c.discoverySlugs.every(s=>done.has(s))),[done]);
  const sortedHistory=useMemo(()=>entries.filter(e=>allDiscoveries.some(d=>d.slug===e.discovery_slug)&& (historyFilter==="all"||e.completion_type===historyFilter)).sort((a,b)=>{
   // Show the most recently visited first; undated historical visits follow dated visits.
@@ -41,6 +43,9 @@ export default function MyQuested(){
   <div className="mt-4 flex flex-wrap gap-3"><Link href="/welcome" className="inline-flex rounded-full bg-[#163e32] px-5 py-3 text-sm font-black text-white hover:bg-emerald-900">Get started →</Link><Link href="/collections" className="inline-flex rounded-full border border-emerald-900/20 px-5 py-3 text-sm font-bold text-emerald-900 hover:bg-white">Browse collections</Link></div>
  </section>}
  {done.size>0&&<div role="status" className="mt-6 rounded-2xl bg-emerald-50 px-6 py-5"><p className="font-bold text-emerald-950">✓ {done.size} {done.size===1?"place":"places"} in your adventure record</p><p className="mt-1 text-sm text-emerald-800">Keep exploring—each discovery counts in every collection where it appears.</p></div>}
+ <section className="mt-9 rounded-2xl border border-emerald-950/10 bg-white p-6" aria-label="Your Want to Go list"><div className="flex flex-wrap items-center justify-between gap-3"><div><p className="text-xs font-black uppercase tracking-[.16em] text-emerald-700">The adventures ahead</p><h2 className="mt-2 text-2xl font-black">☆ Want to Go</h2><p className="mt-2 text-sm text-slate-600">Places you are excited to explore next. Saved adventures do not count as completed.</p></div><Link href="/map" className="rounded-full bg-[#163e32] px-5 py-3 text-xs font-bold text-white">Explore map →</Link></div>
+ {wantToGo.length?<div className="mt-5 grid gap-3 sm:grid-cols-2">{wantToGo.map(({wish,discovery})=><Link key={wish.discovery_slug} href={"/discoveries/"+wish.discovery_slug} className="flex items-center justify-between rounded-xl border border-emerald-950/10 px-4 py-4 hover:bg-emerald-50"><span><span className="block font-black">{discovery?.name}</span><span className="mt-1 block text-xs text-slate-500">{discovery?.region}</span></span><span className="text-sm font-bold text-emerald-800">View →</span></Link>)}</div>:<p className="mt-5 rounded-xl bg-emerald-50 p-5 text-sm text-emerald-950">Your list is ready. Explore the map and bookmark a place you would love to visit.</p>}
+ </section>
  {masteredCollections.length>0&&<section className="mt-10" aria-label="Your completed collection achievements">
   <div className="flex flex-wrap items-center justify-between gap-3"><div><p className="text-xs font-black uppercase tracking-widest text-amber-800">Your milestones</p><h2 className="mt-1 text-2xl font-black">🏆 Hall of Fame</h2></div><span className="rounded-full bg-amber-100 px-4 py-2 text-sm font-black text-amber-900">{masteredCollections.length} {masteredCollections.length===1?"collection mastered":"collections mastered"}</span></div>
   <p className="mt-2 text-sm text-slate-600">These awards stay yours as long as your completion record contains every destination in the collection.</p>

@@ -3,6 +3,7 @@ import {notFound} from "next/navigation";
 import {allDiscoveries,getDiscovery,getDiscoveryCollections} from "@/lib/catalog";
 import {getDiscoveryDetail} from "@/lib/discovery-details";
 import CompletionControls from "@/components/completion-controls";
+import WantToGoButton from "@/components/want-to-go-button";
 import {photoForDiscovery} from "@/lib/media";
 import {PhotoImage} from "@/components/photo";
 export function generateStaticParams(){return allDiscoveries.map(d=>({slug:d.slug}));}
@@ -26,6 +27,7 @@ export default async function DiscoveryDetailPage({params}:{params:Promise<{slug
     {(detail?.activities??[]).map(activity=><span key={activity} className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold">{activity}</span>)}
    </div>
   </section>
+  <div className="mt-6 flex flex-wrap items-center justify-between gap-3"><Link href="/map" className="text-sm font-bold text-emerald-800 hover:underline">← Explore the map</Link><WantToGoButton slug={slug} compact/></div>
   <div className="mt-8 grid gap-7 md:grid-cols-[minmax(0,1fr)_310px]">
    <div className="space-y-6">
     <CompletionControls slug={slug} collections={related}/>
