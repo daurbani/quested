@@ -1,1 +1,515 @@
-[]
+[
+  {
+    "slug": "washington-park",
+    "name": "Washington Park",
+    "region": "Portland",
+    "summary": "City park and cultural attractions",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "portland-japanese-garden",
+    "name": "Portland Japanese Garden",
+    "region": "Portland",
+    "summary": "Japanese garden in Washington Park",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "international-rose-test-garden",
+    "name": "International Rose Test Garden",
+    "region": "Portland",
+    "summary": "Rose garden in Washington Park",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "pittock-mansion",
+    "name": "Pittock Mansion",
+    "region": "Portland",
+    "summary": "Historic landmark and city viewpoint",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "forest-park",
+    "name": "Forest Park",
+    "region": "Portland",
+    "summary": "Extensive forested urban park",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "powell-butte-nature-park",
+    "name": "Powell Butte Nature Park",
+    "region": "Portland",
+    "summary": "Open-space park with wide views",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-tabor-park",
+    "name": "Mount Tabor Park",
+    "region": "Portland",
+    "summary": "Park on an extinct volcanic cinder cone",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "council-crest-park",
+    "name": "Council Crest Park",
+    "region": "Portland",
+    "summary": "Hilltop park with panoramic views",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "oaks-bottom-wildlife-refuge",
+    "name": "Oaks Bottom Wildlife Refuge",
+    "region": "Portland",
+    "summary": "Wetland and wildlife habitat",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "crystal-springs-rhododendron-garden",
+    "name": "Crystal Springs Rhododendron Garden",
+    "region": "Portland",
+    "summary": "Botanical garden with ponds",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "hoyt-arboretum",
+    "name": "Hoyt Arboretum",
+    "region": "Portland",
+    "summary": "Living collection of trees",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "cathedral-park",
+    "name": "Cathedral Park",
+    "region": "Portland",
+    "summary": "Park beneath the St. Johns Bridge",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "kelley-point-park",
+    "name": "Kelley Point Park",
+    "region": "Portland",
+    "summary": "Park near the Willamette–Columbia confluence",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "tryon-creek-state-natural-area",
+    "name": "Tryon Creek State Natural Area",
+    "region": "Portland",
+    "summary": "Forested natural area with trails",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "eastbank-esplanade",
+    "name": "Eastbank Esplanade",
+    "region": "Portland",
+    "summary": "Riverside walking and biking path",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "rocky-butte-natural-area",
+    "name": "Rocky Butte Natural Area",
+    "region": "Portland",
+    "summary": "Elevated city viewpoint",
+    "category": "City adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "multnomah-falls",
+    "name": "Multnomah Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Iconic two-tier waterfall",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "latourell-falls",
+    "name": "Latourell Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Waterfall in Guy W. Talbot State Park",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "bridal-veil-falls",
+    "name": "Bridal Veil Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Waterfall along the Historic Columbia River Highway",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "wahkeena-falls",
+    "name": "Wahkeena Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Cascading waterfall near Multnomah Falls",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "horsetail-falls",
+    "name": "Horsetail Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Roadside waterfall",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "ponytail-falls",
+    "name": "Ponytail Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Waterfall also known as Upper Horsetail Falls",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "elowah-falls",
+    "name": "Elowah Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Waterfall in a basalt amphitheater",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "wahclella-falls",
+    "name": "Wahclella Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Waterfall along Tanner Creek",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "dry-creek-falls",
+    "name": "Dry Creek Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Waterfall reached via the Pacific Crest Trail corridor",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "starvation-creek-falls",
+    "name": "Starvation Creek Falls",
+    "region": "Columbia River Gorge",
+    "summary": "Waterfall near Starvation Creek State Park",
+    "category": "Waterfalls",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "haystack-rock",
+    "name": "Haystack Rock",
+    "region": "Cannon Beach",
+    "summary": "Sea stack at Cannon Beach",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "ecola-state-park",
+    "name": "Ecola State Park",
+    "region": "Northern Oregon Coast",
+    "summary": "Coastal park and viewpoints",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "cape-kiwanda",
+    "name": "Cape Kiwanda",
+    "region": "Pacific City",
+    "summary": "Sandstone headland and ocean views",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "cape-perpetua-scenic-area",
+    "name": "Cape Perpetua Scenic Area",
+    "region": "Central Oregon Coast",
+    "summary": "Forested headland and coastal viewpoints",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "heceta-head-lighthouse",
+    "name": "Heceta Head Lighthouse",
+    "region": "Central Oregon Coast",
+    "summary": "Historic coastal lighthouse",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "thors-well",
+    "name": "Thor’s Well",
+    "region": "Cape Perpetua",
+    "summary": "Wave-washed basalt feature",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "samuel-h-boardman-state-scenic-corridor",
+    "name": "Samuel H. Boardman State Scenic Corridor",
+    "region": "Southern Oregon Coast",
+    "summary": "Scenic coastal corridor",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "cape-lookout-state-park",
+    "name": "Cape Lookout State Park",
+    "region": "Northern Oregon Coast",
+    "summary": "Coastal headland and park",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "oswald-west-state-park",
+    "name": "Oswald West State Park",
+    "region": "Northern Oregon Coast",
+    "summary": "Forested coastal park and beaches",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "yaquina-head-outstanding-natural-area",
+    "name": "Yaquina Head Outstanding Natural Area",
+    "region": "Newport",
+    "summary": "Headland with lighthouse and rocky shoreline",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "fort-stevens-state-park",
+    "name": "Fort Stevens State Park",
+    "region": "Northern Oregon Coast",
+    "summary": "Coastal park near the Columbia River mouth",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "face-rock-state-scenic-viewpoint",
+    "name": "Face Rock State Scenic Viewpoint",
+    "region": "Bandon",
+    "summary": "Coastal sea stacks and beach overlook",
+    "category": "Coastal escapes",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "black-butte-lookout",
+    "name": "Black Butte Lookout",
+    "region": "Central Oregon",
+    "summary": "Historic lookout site on Black Butte",
+    "category": "High places",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "gold-butte-lookout",
+    "name": "Gold Butte Lookout",
+    "region": "Willamette National Forest",
+    "summary": "Historic mountain lookout",
+    "category": "High places",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "fivemile-butte-lookout",
+    "name": "Fivemile Butte Lookout",
+    "region": "Mount Hood National Forest",
+    "summary": "Lookout site in the eastern Cascades",
+    "category": "High places",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "clear-lake-butte-lookout",
+    "name": "Clear Lake Butte Lookout",
+    "region": "Mount Hood National Forest",
+    "summary": "Lookout site near Clear Lake",
+    "category": "High places",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "warner-mountain-lookout",
+    "name": "Warner Mountain Lookout",
+    "region": "Southern Oregon",
+    "summary": "Lookout site in the Warner Mountains",
+    "category": "High places",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "bald-butte-lookout",
+    "name": "Bald Butte Lookout",
+    "region": "Eastern Oregon",
+    "summary": "Remote mountain lookout",
+    "category": "High places",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "dutchman-peak-lookout",
+    "name": "Dutchman Peak Lookout",
+    "region": "Siskiyou Mountains",
+    "summary": "Historic lookout in southwestern Oregon",
+    "category": "High places",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-bolivar-lookout",
+    "name": "Mount Bolivar Lookout",
+    "region": "Coast Range",
+    "summary": "Historic lookout site in southwestern Oregon",
+    "category": "High places",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-hood",
+    "name": "Mount Hood",
+    "region": "Northern Oregon Cascades",
+    "summary": "Oregon's highest peak",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-jefferson",
+    "name": "Mount Jefferson",
+    "region": "Central Oregon Cascades",
+    "summary": "Prominent Cascade stratovolcano",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "north-sister",
+    "name": "North Sister",
+    "region": "Central Oregon Cascades",
+    "summary": "Rugged northern peak of the Three Sisters",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "middle-sister",
+    "name": "Middle Sister",
+    "region": "Central Oregon Cascades",
+    "summary": "Central summit of the Three Sisters",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "south-sister",
+    "name": "South Sister",
+    "region": "Central Oregon Cascades",
+    "summary": "Southern peak of the Three Sisters",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-bachelor",
+    "name": "Mount Bachelor",
+    "region": "Central Oregon Cascades",
+    "summary": "Volcanic peak west of Bend",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-mcloughlin",
+    "name": "Mount McLoughlin",
+    "region": "Southern Oregon Cascades",
+    "summary": "Prominent volcanic summit",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-thielsen",
+    "name": "Mount Thielsen",
+    "region": "Southern Oregon Cascades",
+    "summary": "Steep and distinctive volcanic spire",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-washington",
+    "name": "Mount Washington",
+    "region": "Central Oregon Cascades",
+    "summary": "Jagged volcanic peak",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "three-fingered-jack",
+    "name": "Three Fingered Jack",
+    "region": "Central Oregon Cascades",
+    "summary": "Rugged volcanic spire",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mount-bailey",
+    "name": "Mount Bailey",
+    "region": "Southern Oregon Cascades",
+    "summary": "Volcanic mountain near Diamond Lake",
+    "category": "Mountain adventures",
+    "status": "published",
+    "catalogStatus": "starter"
+  }
+]
