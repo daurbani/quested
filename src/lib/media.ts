@@ -38,7 +38,7 @@ export const photos:Record<string,MediaCredit>={
  "cape-perpetua-scenic-area":{"file":"Cape Perpetua from Visitor Center 01.jpg","alt":"Cape Perpetua coast from the visitor center","credit":"Joe Mabel","license":"CC BY-SA 4.0","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","sourceUrl":"https://commons.wikimedia.org/wiki/File:Cape_Perpetua_from_Visitor_Center_01.jpg","position":"center 50%"}
 ,
  "northwest-moderate-multipitch-cover":{"file":"Smith Rock Climber 07-1987.jpg","alt":"A climber on steep rock at Smith Rock State Park, Oregon","credit":"Tequask","license":"CC BY-SA 4.0","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","sourceUrl":"https://commons.wikimedia.org/wiki/File:Smith_Rock_Climber_07-1987.jpg","position":"center 45%"},
- "palmer-snowfield-ski-tour":{"file":"Palmer Snowfield on Mount Hood Oregon.JPG","alt":"Palmer Snowfield on Mount Hood","credit":"M. O. Stevens","license":"CC BY-SA 4.0","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","sourceUrl":"https://commons.wikimedia.org/wiki/File:Palmer_Snowfield_on_Mount_Hood_Oregon.JPG","position":"center 50%"}
+ "palmer-snowfield-ski-tour":{"file":"Palmer Snowfield on Mount Hood Oregon.JPG","alt":"Palmer Snowfield on Mount Hood","credit":"M. O. Stevens","license":"CC BY-SA 3.0","licenseUrl":"https://creativecommons.org/licenses/by-sa/3.0/","sourceUrl":"https://commons.wikimedia.org/wiki/File:Palmer_Snowfield_on_Mount_Hood_Oregon.JPG","position":"center 50%"}
 };
 const collectionPhoto:Record<string,string>={
  "portland-explorer":"portland",
