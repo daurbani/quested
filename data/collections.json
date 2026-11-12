@@ -151,5 +151,23 @@
       "crater-lake-circumnavigation",
       "three-fingered-jack-circumnavigation"
     ]
+  },
+  {
+    "slug": "northwest-moderate-multipitch-classics",
+    "name": "Northwest Moderate Multipitch Classics",
+    "description": "Eight memorable bolted multipitch rock climbs across Oregon and Washington, from 5.6 to 5.8+. Designed for climbers who already have independent sport-leading, multipitch belay, descent and anchor skills—not first-time climbers. Technical grades do not capture exposure or commitment.",
+    "category": "Rock climbing",
+    "emoji": "🧗",
+    "status": "published",
+    "discoverySlugs": [
+      "living-blindly",
+      "first-kiss",
+      "santiam-pinnacle-south-face",
+      "giants-staircase",
+      "poppys-peril",
+      "cobbles-101",
+      "cocaine-connection",
+      "voyage-of-the-cowdog"
+    ]
   }
 ]

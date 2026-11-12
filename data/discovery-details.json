@@ -245,5 +245,141 @@
       "Trail running"
     ],
     "reviewStatus": "editorial-reviewed"
+  },
+  "living-blindly": {
+    "eyebrow": "Sport climbing · 5.7 · 3 pitches",
+    "description": "Three-pitch bolted climb on the Marsupials with exposed moves and a memorable summit. A featured objective in Quested’s Northwest Moderate Multipitch Classics collection.",
+    "highlights": [
+      "Three pitches on Smith Rock’s Marsupials",
+      "Exposed movement and a memorable finish",
+      "A true multipitch objective with descent logistics"
+    ],
+    "whatToKnow": "Requires practiced lead belaying, multipitch anchor transitions, and safe rappelling or other verified descent. The optional ridge traverse is exposed and unprotected; do not assume it is part of an easy descent. Check access and conditions.",
+    "officialUrl": "https://www.mountainproject.com/route/106775995/living-blindly",
+    "sourceName": "Mountain Project route information",
+    "activities": [
+      "Sport climbing",
+      "Multipitch climbing"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "first-kiss": {
+    "eyebrow": "Sport climbing · 5.7 · 5 pitches",
+    "description": "Five-pitch bolted adventure with traversing pitches and a scenic walk-off. A featured objective in Quested’s Northwest Moderate Multipitch Classics collection.",
+    "highlights": [
+      "Five pitches on Kiss of the Lepers Buttress",
+      "Traverses and distinctive rock features",
+      "A summit finish and walk-off descent"
+    ],
+    "whatToKnow": "Communication and rope drag on traverses can complicate belays. The standard descent involves exposed scrambling and walking off, not simply rappelling the route. Check current Smith Rock raptor nesting closures.",
+    "officialUrl": "https://www.mountainproject.com/route/105852652/first-kiss",
+    "sourceName": "Mountain Project route information",
+    "activities": [
+      "Sport climbing",
+      "Multipitch climbing"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "santiam-pinnacle-south-face": {
+    "eyebrow": "Sport climbing · 5.6 · 3 pitches",
+    "description": "Three-pitch sport route up an andesite pinnacle near Santiam Pass. A featured objective in Quested’s Northwest Moderate Multipitch Classics collection.",
+    "highlights": [
+      "Three pitches to a distinct summit",
+      "Short approach from the highway corridor",
+      "Mossy lower terrain and exposed upper slabs"
+    ],
+    "whatToKnow": "The lower pitches can be mossy and protection may be difficult to spot. Descent requires confirming the correct rappel anchors, rope length, and current hardware. Inspect all anchors independently.",
+    "officialUrl": "https://www.mountainproject.com/route/112125644/south-face",
+    "sourceName": "Mountain Project route information",
+    "activities": [
+      "Sport climbing",
+      "Multipitch climbing"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "giants-staircase": {
+    "eyebrow": "Sport climbing · 5.6 · 2 pitches",
+    "description": "Two-pitch bolted route to the summit of French's Dome, with an airy rappel. A featured objective in Quested’s Northwest Moderate Multipitch Classics collection.",
+    "highlights": [
+      "Two-pitch moderate sport climb",
+      "An unusual summit finish",
+      "A memorable rappel descent"
+    ],
+    "whatToKnow": "Route descriptions distinguish a moderate traverse from a steeper 5.10 variation; choose carefully. Missing-anchor-hardware reports were posted in August 2026, followed by an update that repairs were made. Independently verify current anchors, rappel stations, and route access before climbing.",
+    "officialUrl": "https://www.mountainproject.com/route/105835086/giants-staircase",
+    "sourceName": "Mountain Project route information",
+    "activities": [
+      "Sport climbing",
+      "Multipitch climbing"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "poppys-peril": {
+    "eyebrow": "Sport climbing · 5.7+ · 5 pitches",
+    "description": "Five-pitch bolted climbing above the Middle Fork Snoqualmie Valley. A featured objective in Quested’s Northwest Moderate Multipitch Classics collection.",
+    "highlights": [
+      "Five pitches and a substantial outing",
+      "Snoqualmie Valley views",
+      "A modern bolted multipitch route"
+    ],
+    "whatToKnow": "Five pitches demand reliable transitions, route reading, partner communication, and descent planning. Verify current approach, anchors, closures, weather and local climbing reports before setting out.",
+    "officialUrl": "https://www.mountainproject.com/route/125018224/poppys-peril",
+    "sourceName": "Mountain Project route information",
+    "activities": [
+      "Sport climbing",
+      "Multipitch climbing"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "cobbles-101": {
+    "eyebrow": "Sport climbing · 5.7 · 5 pitches",
+    "description": "Five-pitch sport climbing on cobble-studded volcanic rock in Washington's southern Cascades. A featured objective in Quested’s Northwest Moderate Multipitch Classics collection.",
+    "highlights": [
+      "Five pitches on distinctive volcanic rock",
+      "A remote Cascade climbing setting",
+      "Views toward several Pacific Northwest volcanoes"
+    ],
+    "whatToKnow": "Pinto Rock is in Gifford Pinchot National Forest. Remote road access, variable rock quality and descent requirements merit extra planning. Confirm open forest roads, route-specific protection and anchor conditions before travel.",
+    "officialUrl": "https://www.mountainproject.com/area/109294508/pinto-rock",
+    "sourceName": "Mountain Project route information",
+    "activities": [
+      "Sport climbing",
+      "Multipitch climbing"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "cocaine-connection": {
+    "eyebrow": "Sport climbing · 5.7 · 2 pitches",
+    "description": "Two-pitch bolted slab and friction climbing on Icicle Buttress. A featured objective in Quested’s Northwest Moderate Multipitch Classics collection.",
+    "highlights": [
+      "Two pitches of slab climbing",
+      "Classic Icicle Creek granite setting",
+      "A route with distinctive traversing movement"
+    ],
+    "whatToKnow": "Slab friction and traversing demand attentive rope management. The route reference discusses unusual rope requirements for some rappels; plan the descent from up-to-date route information and verify seasonal access and raptor notices.",
+    "officialUrl": "https://www.mountainproject.com/route/106589563/cocaine-connection",
+    "sourceName": "Mountain Project route information",
+    "activities": [
+      "Sport climbing",
+      "Multipitch climbing"
+    ],
+    "reviewStatus": "editorial-reviewed"
+  },
+  "voyage-of-the-cowdog": {
+    "eyebrow": "Sport climbing · 5.8+ · 3 pitches",
+    "description": "Three-pitch sport route on Picnic Lunch Wall with an airy final pitch. A featured objective in Quested’s Northwest Moderate Multipitch Classics collection.",
+    "highlights": [
+      "Airy high-exposure final pitch",
+      "Three-pitch journey on Picnic Lunch Wall",
+      "Memorable summit and canyon views"
+    ],
+    "whatToKnow": "The route has reports of loose rock and a more complex descent than the grade suggests. Rappels are especially sensitive to rope length; consider the established walk-off after reviewing current route information. Smith Rock may impose seasonal raptor closures.",
+    "officialUrl": "https://www.mountainproject.com/route/106673268/voyage-of-the-cowdog",
+    "sourceName": "Mountain Project route information",
+    "activities": [
+      "Sport climbing",
+      "Multipitch climbing"
+    ],
+    "reviewStatus": "editorial-reviewed"
   }
 }

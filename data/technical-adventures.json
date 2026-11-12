@@ -1,0 +1,168 @@
+{
+  "living-blindly": {
+    "activity": "Sport climbing",
+    "experienceLevel": "Developing",
+    "technicalGrade": "5.7",
+    "protection": "Bolted sport",
+    "pitches": 3,
+    "commitment": "Half day",
+    "requiredSkills": [
+      "Sport leading",
+      "Multipitch belays",
+      "Rappelling"
+    ],
+    "keyHazards": [
+      "Exposed ridge terrain",
+      "Descent complexity",
+      "Loose rock"
+    ],
+    "routeInfoUrl": "https://www.mountainproject.com/route/106775995/living-blindly",
+    "routeInfoSource": "Mountain Project"
+  },
+  "first-kiss": {
+    "activity": "Sport climbing",
+    "experienceLevel": "Developing",
+    "technicalGrade": "5.7",
+    "protection": "Bolted sport",
+    "pitches": 5,
+    "commitment": "Full day",
+    "requiredSkills": [
+      "Sport leading",
+      "Multipitch belays",
+      "Route finding",
+      "Descent scrambling"
+    ],
+    "keyHazards": [
+      "Traverse rope drag",
+      "Exposed walk-off",
+      "Seasonal raptor closures"
+    ],
+    "routeInfoUrl": "https://www.mountainproject.com/route/105852652/first-kiss",
+    "routeInfoSource": "Mountain Project"
+  },
+  "santiam-pinnacle-south-face": {
+    "activity": "Sport climbing",
+    "experienceLevel": "Developing",
+    "technicalGrade": "5.6",
+    "protection": "Bolted sport",
+    "pitches": 3,
+    "commitment": "Half day",
+    "requiredSkills": [
+      "Sport leading",
+      "Multipitch belays",
+      "Rappelling"
+    ],
+    "keyHazards": [
+      "Mossy rock",
+      "Anchor and rappel logistics",
+      "Loose terrain"
+    ],
+    "routeInfoUrl": "https://www.mountainproject.com/route/112125644/south-face",
+    "routeInfoSource": "Mountain Project"
+  },
+  "giants-staircase": {
+    "activity": "Sport climbing",
+    "experienceLevel": "Developing",
+    "technicalGrade": "5.6",
+    "protection": "Bolted sport",
+    "pitches": 2,
+    "commitment": "Short outing",
+    "requiredSkills": [
+      "Sport leading",
+      "Multipitch belays",
+      "Rappelling"
+    ],
+    "keyHazards": [
+      "Anchor hardware history",
+      "Descent rappel",
+      "Route variation"
+    ],
+    "routeInfoUrl": "https://www.mountainproject.com/route/105835086/giants-staircase",
+    "routeInfoSource": "Mountain Project"
+  },
+  "poppys-peril": {
+    "activity": "Sport climbing",
+    "experienceLevel": "Experienced",
+    "technicalGrade": "5.7+",
+    "protection": "Bolted sport",
+    "pitches": 5,
+    "commitment": "Full day",
+    "requiredSkills": [
+      "Sport leading",
+      "Multipitch belays",
+      "Rappelling",
+      "Route finding"
+    ],
+    "keyHazards": [
+      "Longer approach and descent",
+      "Weather",
+      "Exposure"
+    ],
+    "routeInfoUrl": "https://www.mountainproject.com/route/125018224/poppys-peril",
+    "routeInfoSource": "Mountain Project"
+  },
+  "cobbles-101": {
+    "activity": "Sport climbing",
+    "experienceLevel": "Experienced",
+    "technicalGrade": "5.7",
+    "protection": "Bolted sport",
+    "pitches": 5,
+    "commitment": "Full day",
+    "requiredSkills": [
+      "Sport leading",
+      "Multipitch belays",
+      "Rappelling",
+      "Remote access planning"
+    ],
+    "keyHazards": [
+      "Forest road access",
+      "Rock and anchor quality",
+      "Remote location"
+    ],
+    "routeInfoUrl": "https://www.mountainproject.com/area/109294508/pinto-rock",
+    "routeInfoSource": "Mountain Project"
+  },
+  "cocaine-connection": {
+    "activity": "Sport climbing",
+    "experienceLevel": "Developing",
+    "technicalGrade": "5.7",
+    "protection": "Bolted sport",
+    "pitches": 2,
+    "commitment": "Half day",
+    "requiredSkills": [
+      "Sport leading",
+      "Multipitch belays",
+      "Slab technique",
+      "Rappelling"
+    ],
+    "keyHazards": [
+      "Friction slab falls",
+      "Rope-length and rappel planning",
+      "Seasonal closures"
+    ],
+    "routeInfoUrl": "https://www.mountainproject.com/route/106589563/cocaine-connection",
+    "routeInfoSource": "Mountain Project"
+  },
+  "voyage-of-the-cowdog": {
+    "activity": "Sport climbing",
+    "experienceLevel": "Experienced",
+    "technicalGrade": "5.8+",
+    "protection": "Bolted sport",
+    "pitches": 3,
+    "commitment": "Half day",
+    "requiredSkills": [
+      "Sport leading",
+      "Multipitch belays",
+      "Descent route finding",
+      "Rappelling"
+    ],
+    "keyHazards": [
+      "Loose rock",
+      "Exposed climbing",
+      "Complex descent",
+      "Seasonal closures"
+    ],
+    "routeInfoUrl": "https://www.mountainproject.com/route/106673268/voyage-of-the-cowdog",
+    "routeInfoSource": "Mountain Project"
+  }
+}

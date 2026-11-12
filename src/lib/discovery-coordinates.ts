@@ -234,5 +234,13 @@ export const discoveryCoordinates:Record<string,readonly [number,number]> = {
  "mount-jefferson-circumnavigation": [44.66, -121.83],
  "mount-hood-circumnavigation": [45.392, -121.73],
  "crater-lake-circumnavigation": [42.95, -122.12],
- "three-fingered-jack-circumnavigation": [44.492, -121.815]
+ "three-fingered-jack-circumnavigation": [44.492, -121.815],
+ "living-blindly": [44.36809, -121.12388],
+ "first-kiss": [44.37106, -121.14307],
+ "santiam-pinnacle-south-face": [44.38928, -122.1958],
+ "giants-staircase": [45.39719, -121.85984],
+ "poppys-peril": [47.58865, -121.46745],
+ "cobbles-101": [46.3268, -121.92379],
+ "cocaine-connection": [47.54818, -120.75176],
+ "voyage-of-the-cowdog": [44.36707, -121.13708]
 };

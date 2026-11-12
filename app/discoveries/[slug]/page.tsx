@@ -2,6 +2,7 @@ import Link from "next/link";
 import {notFound} from "next/navigation";
 import {allDiscoveries,getDiscovery,getDiscoveryCollections} from "@/lib/catalog";
 import {getDiscoveryDetail} from "@/lib/discovery-details";
+import {getTechnicalAdventure} from "@/lib/technical-adventures";
 import CompletionControls from "@/components/completion-controls";
 import WantToGoButton from "@/components/want-to-go-button";
 import {photoForDiscovery} from "@/lib/media";
@@ -12,6 +13,7 @@ export default async function DiscoveryDetailPage({params}:{params:Promise<{slug
  const d=getDiscovery(slug);if(!d)notFound();
  const related=getDiscoveryCollections(slug);
  const detail=getDiscoveryDetail(slug);
+ const technical=getTechnicalAdventure(slug);
  const photo=photoForDiscovery(slug);
  return <main className="mx-auto max-w-5xl px-5 py-12">
   <Link href="/collections" className="text-sm font-semibold text-emerald-800 hover:underline">← Explore collections</Link>
@@ -36,9 +38,20 @@ export default async function DiscoveryDetailPage({params}:{params:Promise<{slug
      <p className="mt-4 leading-8 text-slate-700">{detail?.description??d.summary}</p>
      {detail?.highlights&&<><h3 className="mt-7 font-bold">What makes it special</h3><ul className="mt-3 space-y-2">{detail.highlights.map(h=><li key={h} className="flex gap-2 text-sm leading-6 text-slate-700"><span aria-hidden className="text-emerald-700">✦</span>{h}</li>)}</ul></>}
     </section>
+    {technical&&<section className="rounded-2xl bg-white p-7 shadow-sm" aria-label="Technical climbing profile">
+     <p className="text-xs font-black uppercase tracking-widest text-emerald-700">Technical profile</p>
+     <h2 className="mt-2 text-2xl font-black">What this route requires</h2>
+     <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
+      {([["Climbing grade",technical.technicalGrade],["Pitches",String(technical.pitches)],["Protection",technical.protection],["Experience",technical.experienceLevel],["Commitment",technical.commitment],["Activity",technical.activity]] as const).map(([label,value])=><div key={label} className="rounded-xl bg-emerald-50 p-3"><p className="text-xs font-bold text-emerald-800">{label}</p><p className="mt-1 font-black text-emerald-950">{value}</p></div>)}
+     </div>
+     <h3 className="mt-6 font-black">Skills required</h3><ul className="mt-2 flex flex-wrap gap-2">{technical.requiredSkills.map(skill=><li key={skill} className="rounded-full bg-slate-100 px-3 py-1.5 text-sm text-slate-800">{skill}</li>)}</ul>
+     <h3 className="mt-6 font-black">Key hazards to assess</h3><ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-6 text-slate-700">{technical.keyHazards.map(hazard=><li key={hazard}>{hazard}</li>)}</ul>
+     <p className="mt-5 text-xs leading-5 text-slate-600">Quested experience levels describe the intended skill progression, not objective safety. A moderate climbing grade does not imply a low-consequence route. Bring independent multipitch and descent competence.</p>
+     <a href={technical.routeInfoUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-bold text-emerald-800 underline underline-offset-2">Check route details on {technical.routeInfoSource} ↗</a>
+    </section>}
     <section className="rounded-2xl bg-white p-7 shadow-sm"><h2 className="text-xl font-black">Plan your visit</h2>
      <p className="mt-3 leading-7 text-slate-700">{detail?.whatToKnow??"Destination details are still being researched. Check official local resources for conditions, access and any permit requirements."}</p>
-     {detail?.officialUrl&&<a href={detail.officialUrl} target="_blank" rel="noopener noreferrer" className="mt-5 inline-block font-semibold text-emerald-800 hover:underline">Read the official guidance ↗</a>}
+     {detail?.officialUrl&&<a href={detail.officialUrl} target="_blank" rel="noopener noreferrer" className="mt-5 inline-block font-semibold text-emerald-800 hover:underline">{technical?"View source route information ↗":"Read the planning source ↗"}</a>}
      <p className="mt-4 text-xs leading-5 text-slate-500">Information is a planning starting point, not live conditions or route guidance. Always check current access, weather, safety and permit information.</p>
     </section>
    </div>
