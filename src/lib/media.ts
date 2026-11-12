@@ -36,6 +36,9 @@ export const photos:Record<string,MediaCredit>={
  "thors-well":{"file":"Thors Well.jpg","alt":"Thor's Well on Cape Perpetua","credit":"John Fowler","license":"CC BY 2.0","licenseUrl":"https://creativecommons.org/licenses/by/2.0/","sourceUrl":"https://commons.wikimedia.org/wiki/File:Thors_Well.jpg","position":"center 50%"},
  "cathedral-park":{"file":"St Johns Bridge from Cathedral Park river and sky - Portland, Oregon.jpg","alt":"St. Johns Bridge viewed from Cathedral Park","credit":"M.O. Stevens","license":"CC BY-SA 4.0","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","sourceUrl":"https://commons.wikimedia.org/wiki/File:St_Johns_Bridge_from_Cathedral_Park_river_and_sky_-_Portland%2C_Oregon.jpg","position":"center 50%"},
  "cape-perpetua-scenic-area":{"file":"Cape Perpetua from Visitor Center 01.jpg","alt":"Cape Perpetua coast from the visitor center","credit":"Joe Mabel","license":"CC BY-SA 4.0","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","sourceUrl":"https://commons.wikimedia.org/wiki/File:Cape_Perpetua_from_Visitor_Center_01.jpg","position":"center 50%"}
+,
+ "northwest-moderate-multipitch-cover":{"file":"Smith Rock Climber 07-1987.jpg","alt":"A climber on steep rock at Smith Rock State Park, Oregon","credit":"Tequask","license":"CC BY-SA 4.0","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","sourceUrl":"https://commons.wikimedia.org/wiki/File:Smith_Rock_Climber_07-1987.jpg","position":"center 45%"},
+ "palmer-snowfield-ski-tour":{"file":"Palmer Snowfield on Mount Hood Oregon.JPG","alt":"Palmer Snowfield on Mount Hood","credit":"M. O. Stevens","license":"CC BY-SA 4.0","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","sourceUrl":"https://commons.wikimedia.org/wiki/File:Palmer_Snowfield_on_Mount_Hood_Oregon.JPG","position":"center 50%"}
 };
 const collectionPhoto:Record<string,string>={
  "portland-explorer":"portland",
@@ -45,7 +48,9 @@ const collectionPhoto:Record<string,string>={
  "oregon-volcanoes":"mount-hood",
  "portland-viewpoints":"portland",
  "cascade-summit-circuit":"mount-hood",
- "trail-circumnavigations":"mount-hood"
+ "trail-circumnavigations":"mount-hood",
+ "northwest-moderate-multipitch-classics":"northwest-moderate-multipitch-cover",
+ "northwest-alpine-ski-tours":"palmer-snowfield-ski-tour"
 };
 const relatedPhotos:Record<string,string>={
  "mount-hood-circumnavigation":"mount-hood",

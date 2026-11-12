@@ -164,5 +164,212 @@
     ],
     "routeInfoUrl": "https://www.mountainproject.com/route/106673268/voyage-of-the-cowdog",
     "routeInfoSource": "Mountain Project"
+  },
+  "tilly-jane-ski-tour": {
+    "activity": "Alpine ski touring",
+    "experienceLevel": "Developing",
+    "technicalGrade": "Condition-dependent",
+    "protection": "Unpatrolled snow terrain",
+    "commitment": "Half to full day",
+    "verticalGain": "~1,800 ft to A-frame",
+    "descentStyle": "Forest and burn-area descent",
+    "requiredSkills": [
+      "Uphill skinning and transitions",
+      "Confident off-piste skiing",
+      "Avalanche awareness and rescue",
+      "Winter navigation and group decision-making"
+    ],
+    "keyHazards": [
+      "Avalanche conditions",
+      "Tree wells and obstacles",
+      "Winter navigation",
+      "Variable snow coverage"
+    ],
+    "routeInfoUrl": "https://mazamas.org/activity/instance/15177/",
+    "routeInfoSource": "Mazamas"
+  },
+  "white-river-ski-tour": {
+    "activity": "Alpine ski touring",
+    "experienceLevel": "Developing",
+    "technicalGrade": "Condition-dependent",
+    "protection": "Unpatrolled snow terrain",
+    "commitment": "Half day",
+    "verticalGain": "Route dependent",
+    "descentStyle": "Open snow and varied slopes",
+    "requiredSkills": [
+      "Uphill skinning and transitions",
+      "Confident off-piste skiing",
+      "Avalanche awareness and rescue",
+      "Winter navigation and group decision-making"
+    ],
+    "keyHazards": [
+      "Avalanche terrain",
+      "Steep-sided drainages",
+      "Whiteout navigation",
+      "Resort boundaries"
+    ],
+    "routeInfoUrl": "https://www.onxmaps.com/backcountry/skiing/mount-hood",
+    "routeInfoSource": "onX Backcountry"
+  },
+  "bennett-pass-ski-tour": {
+    "activity": "Alpine ski touring",
+    "experienceLevel": "Experienced",
+    "technicalGrade": "Condition-dependent",
+    "protection": "Unpatrolled snow terrain",
+    "commitment": "Full day",
+    "verticalGain": "~1,500–2,000 ft (loop variant)",
+    "descentStyle": "Road, forest and trail skiing",
+    "requiredSkills": [
+      "Uphill skinning and transitions",
+      "Confident off-piste skiing",
+      "Avalanche awareness and rescue",
+      "Winter navigation and group decision-making"
+    ],
+    "keyHazards": [
+      "Avalanche exposure",
+      "Terrible Traverse",
+      "Difficult trail descents",
+      "Navigation and variable surface"
+    ],
+    "routeInfoUrl": "https://mazamas.org/activity/instance/13631/detail/",
+    "routeInfoSource": "Mazamas"
+  },
+  "kendall-knob-ski-tour": {
+    "activity": "Alpine ski touring",
+    "experienceLevel": "Developing",
+    "technicalGrade": "Condition-dependent",
+    "protection": "Unpatrolled snow terrain",
+    "commitment": "Half day",
+    "verticalGain": "Route dependent",
+    "descentStyle": "Mixed forest and open terrain",
+    "requiredSkills": [
+      "Uphill skinning and transitions",
+      "Confident off-piste skiing",
+      "Avalanche awareness and rescue",
+      "Winter navigation and group decision-making"
+    ],
+    "keyHazards": [
+      "Avalanche terrain",
+      "Snow bridges and drainage crossings",
+      "Route-finding",
+      "Highway access"
+    ],
+    "routeInfoUrl": "https://nwac.us/",
+    "routeInfoSource": "Northwest Avalanche Center"
+  },
+  "yodelin-ski-tour": {
+    "activity": "Alpine ski touring",
+    "experienceLevel": "Developing",
+    "technicalGrade": "Condition-dependent",
+    "protection": "Unpatrolled snow terrain",
+    "commitment": "Half day",
+    "verticalGain": "Varies by tour",
+    "descentStyle": "Tree skiing and glades",
+    "requiredSkills": [
+      "Uphill skinning and transitions",
+      "Confident off-piste skiing",
+      "Avalanche awareness and rescue",
+      "Winter navigation and group decision-making"
+    ],
+    "keyHazards": [
+      "Avalanche conditions",
+      "Tree wells",
+      "Stevens Pass weather",
+      "Route variations"
+    ],
+    "routeInfoUrl": "https://www.beexploring.com/explore/stevens-pass/skiing/backcountry/",
+    "routeInfoSource": "beExploring Stevens Pass backcountry guide"
+  },
+  "smithbrook-ski-tour": {
+    "activity": "Alpine ski touring",
+    "experienceLevel": "Developing",
+    "technicalGrade": "Condition-dependent",
+    "protection": "Unpatrolled snow terrain",
+    "commitment": "Half to full day",
+    "verticalGain": "Route dependent",
+    "descentStyle": "Road approach and forest/mountain skiing",
+    "requiredSkills": [
+      "Uphill skinning and transitions",
+      "Confident off-piste skiing",
+      "Avalanche awareness and rescue",
+      "Winter navigation and group decision-making"
+    ],
+    "keyHazards": [
+      "Avalanche terrain",
+      "Road and parking restrictions",
+      "Winter route-finding",
+      "Variable snow cover"
+    ],
+    "routeInfoUrl": "https://www.wta.org/go-hiking/hikes/smithbrook",
+    "routeInfoSource": "Washington Trails Association"
+  },
+  "mitchell-creek-ski-tour": {
+    "activity": "Alpine ski touring",
+    "experienceLevel": "Developing",
+    "technicalGrade": "Condition-dependent",
+    "protection": "Unpatrolled snow terrain",
+    "commitment": "Half day",
+    "verticalGain": "Route dependent",
+    "descentStyle": "Variable forest and snow slopes",
+    "requiredSkills": [
+      "Uphill skinning and transitions",
+      "Confident off-piste skiing",
+      "Avalanche awareness and rescue",
+      "Winter navigation and group decision-making"
+    ],
+    "keyHazards": [
+      "Avalanche conditions",
+      "Road and trailhead access",
+      "Navigation",
+      "Variable descent terrain"
+    ],
+    "routeInfoUrl": "https://kafadventures.com/collections/oregon/products/guided-backcountry-touring",
+    "routeInfoSource": "Kaf Adventures"
+  },
+  "palmer-snowfield-ski-tour": {
+    "activity": "Alpine ski touring",
+    "experienceLevel": "Accessible",
+    "technicalGrade": "Condition-dependent",
+    "protection": "Unpatrolled snow terrain",
+    "commitment": "Short outing to half day",
+    "verticalGain": "Chosen turnaround dependent",
+    "descentStyle": "Open alpine snowfield",
+    "requiredSkills": [
+      "Uphill skinning and transitions",
+      "Confident off-piste skiing",
+      "Avalanche awareness and rescue",
+      "Winter navigation and group decision-making"
+    ],
+    "keyHazards": [
+      "Ski-area vehicle traffic",
+      "Poor visibility",
+      "Icy snow",
+      "Operational closures"
+    ],
+    "routeInfoUrl": "https://mountainlessons.com/mthoodskiguide/routes/palmerzigzag/",
+    "routeInfoSource": "Mountain Lessons"
+  },
+  "castle-pinnacle-saddle-ski-tour": {
+    "activity": "Alpine ski touring",
+    "experienceLevel": "Experienced",
+    "technicalGrade": "Condition-dependent",
+    "protection": "Unpatrolled snow terrain",
+    "commitment": "Full day",
+    "verticalGain": "~1,400 ft (winter approach)",
+    "descentStyle": "Open bowl and winter approach",
+    "requiredSkills": [
+      "Uphill skinning and transitions",
+      "Confident off-piste skiing",
+      "Avalanche awareness and rescue",
+      "Winter navigation and group decision-making"
+    ],
+    "keyHazards": [
+      "Avalanche-prone bowl",
+      "Winter road closures",
+      "Navigational visibility",
+      "Variable snow stability"
+    ],
+    "routeInfoUrl": "https://www.mountaineers.org/activities/routes-places/pinnacle-peak-the-castle",
+    "routeInfoSource": "The Mountaineers"
   }
 }

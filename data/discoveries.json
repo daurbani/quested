@@ -637,5 +637,86 @@
     "category": "Rock climbing",
     "status": "published",
     "catalogStatus": "editorial-reviewed"
+  },
+  {
+    "slug": "tilly-jane-ski-tour",
+    "name": "Tilly Jane A-Frame Ski Tour",
+    "region": "Mount Hood, Oregon",
+    "summary": "Climb through forest and burn terrain to Tilly Jane A-Frame, then ski down an independently assessed route.",
+    "category": "Ski touring",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "white-river-ski-tour",
+    "name": "White River Canyon Ski Touring",
+    "region": "Mount Hood, Oregon",
+    "summary": "Explore the White River side of Mount Hood on a conditions-appropriate skin-and-ski outing.",
+    "category": "Ski touring",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "bennett-pass-ski-tour",
+    "name": "Bennett Pass Alpine Touring Loop",
+    "region": "Mount Hood, Oregon",
+    "summary": "Explore a winter Bennett Pass loop with climbing and downhill skiing in the Pocket Creek area.",
+    "category": "Ski touring",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "kendall-knob-ski-tour",
+    "name": "Kendall Knob Ski Tour",
+    "region": "Snoqualmie Pass, Washington",
+    "summary": "An approachable-scale touring objective in the Kendall area with a variable ascent and descent.",
+    "category": "Ski touring",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "yodelin-ski-tour",
+    "name": "Yodelin Backcountry Ski Tour",
+    "region": "Stevens Pass, Washington",
+    "summary": "Earn downhill turns in the Yodelin trees and rolling terrain near Stevens Pass.",
+    "category": "Ski touring",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "smithbrook-ski-tour",
+    "name": "Smithbrook / Nason Ridge Ski Touring",
+    "region": "Stevens Pass East, Washington",
+    "summary": "Explore winter touring around Smithbrook Road and Nason Ridge with planned downhill turns.",
+    "category": "Ski touring",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "mitchell-creek-ski-tour",
+    "name": "Mitchell Creek Ski Touring",
+    "region": "Mount Hood, Oregon",
+    "summary": "A Mount Hood backcountry ski touring area used for instructional and guided outings.",
+    "category": "Ski touring",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "palmer-snowfield-ski-tour",
+    "name": "Palmer Snowfield Skin-and-Ski",
+    "region": "Mount Hood / Timberline, Oregon",
+    "summary": "A human-powered skin-and-ski outing on Palmer Snowfield, respecting ski-area operations.",
+    "category": "Ski touring",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "castle-pinnacle-saddle-ski-tour",
+    "name": "Castle–Pinnacle Saddle Ski Tour",
+    "region": "Tatoosh Range / Mount Rainier, Washington",
+    "summary": "Winter ski tour to the dramatic saddle between The Castle and Pinnacle Peak.",
+    "category": "Ski touring",
+    "status": "published",
+    "catalogStatus": "starter"
   }
 ]
