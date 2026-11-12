@@ -249,7 +249,7 @@ export const discoveryCoordinates:Record<string,readonly [number,number]> = {
  "kendall-knob-ski-tour": [47.428, -121.416],
  "yodelin-ski-tour": [47.747, -121.067],
  "smithbrook-ski-tour": [47.783, -121.037],
- "mitchell-creek-ski-tour": [45.339, -121.667],
+ "mitchell-creek-ski-tour": [45.31678, -121.64007],
  "palmer-snowfield-ski-tour": [45.358, -121.709],
  "castle-pinnacle-saddle-ski-tour": [46.757, -121.733]
 };
