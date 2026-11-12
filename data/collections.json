@@ -169,5 +169,24 @@
       "cocaine-connection",
       "voyage-of-the-cowdog"
     ]
+  },
+  {
+    "slug": "northwest-alpine-ski-tours",
+    "name": "Approachable Northwest Ski Tours",
+    "description": "Nine human-powered ski adventures in Oregon and Washington, featuring uphill skinning and real downhill turns. From accessible snowfields to longer backcountry tours, these are for skiers who have touring, navigation and avalanche skills; conditions—not a fixed grade—determine whether a particular outing is appropriate.",
+    "category": "Ski touring",
+    "emoji": "🎿",
+    "status": "published",
+    "discoverySlugs": [
+      "tilly-jane-ski-tour",
+      "white-river-ski-tour",
+      "bennett-pass-ski-tour",
+      "kendall-knob-ski-tour",
+      "yodelin-ski-tour",
+      "smithbrook-ski-tour",
+      "mitchell-creek-ski-tour",
+      "palmer-snowfield-ski-tour",
+      "castle-pinnacle-saddle-ski-tour"
+    ]
   }
 ]

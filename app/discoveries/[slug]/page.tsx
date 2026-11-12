@@ -38,15 +38,15 @@ export default async function DiscoveryDetailPage({params}:{params:Promise<{slug
      <p className="mt-4 leading-8 text-slate-700">{detail?.description??d.summary}</p>
      {detail?.highlights&&<><h3 className="mt-7 font-bold">What makes it special</h3><ul className="mt-3 space-y-2">{detail.highlights.map(h=><li key={h} className="flex gap-2 text-sm leading-6 text-slate-700"><span aria-hidden className="text-emerald-700">✦</span>{h}</li>)}</ul></>}
     </section>
-    {technical&&<section className="rounded-2xl bg-white p-7 shadow-sm" aria-label="Technical climbing profile">
+    {technical&&<section className="rounded-2xl bg-white p-7 shadow-sm" aria-label="Technical adventure profile">
      <p className="text-xs font-black uppercase tracking-widest text-emerald-700">Technical profile</p>
-     <h2 className="mt-2 text-2xl font-black">What this route requires</h2>
+     <h2 className="mt-2 text-2xl font-black">What this adventure requires</h2>
      <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
-      {([["Climbing grade",technical.technicalGrade],["Pitches",String(technical.pitches)],["Protection",technical.protection],["Experience",technical.experienceLevel],["Commitment",technical.commitment],["Activity",technical.activity]] as const).map(([label,value])=><div key={label} className="rounded-xl bg-emerald-50 p-3"><p className="text-xs font-bold text-emerald-800">{label}</p><p className="mt-1 font-black text-emerald-950">{value}</p></div>)}
+      {([["Technical grade",technical.technicalGrade],...(technical.pitches?[["Pitches",String(technical.pitches)] as const]:[]),...(technical.verticalGain?[["Vertical gain",technical.verticalGain] as const]:[]),...(technical.descentStyle?[["Descent style",technical.descentStyle] as const]:[]),["Terrain / protection",technical.protection],["Experience",technical.experienceLevel],["Commitment",technical.commitment],["Activity",technical.activity]] as ReadonlyArray<readonly [string,string]>).map(([label,value])=><div key={label} className="rounded-xl bg-emerald-50 p-3"><p className="text-xs font-bold text-emerald-800">{label}</p><p className="mt-1 font-black text-emerald-950">{value}</p></div>)}
      </div>
      <h3 className="mt-6 font-black">Skills required</h3><ul className="mt-2 flex flex-wrap gap-2">{technical.requiredSkills.map(skill=><li key={skill} className="rounded-full bg-slate-100 px-3 py-1.5 text-sm text-slate-800">{skill}</li>)}</ul>
      <h3 className="mt-6 font-black">Key hazards to assess</h3><ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-6 text-slate-700">{technical.keyHazards.map(hazard=><li key={hazard}>{hazard}</li>)}</ul>
-     <p className="mt-5 text-xs leading-5 text-slate-600">Quested experience levels describe the intended skill progression, not objective safety. A moderate climbing grade does not imply a low-consequence route. Bring independent multipitch and descent competence.</p>
+     <p className="mt-5 text-xs leading-5 text-slate-600">Quested experience levels describe the intended skill progression, not objective safety. An approachable classification is not a guarantee of safety. Climbing requires appropriate protection and descent competence; ski tours require independent avalanche decisions, winter navigation and competent downhill skiing.</p>
      <a href={technical.routeInfoUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-bold text-emerald-800 underline underline-offset-2">Check route details on {technical.routeInfoSource} ↗</a>
     </section>}
     <section className="rounded-2xl bg-white p-7 shadow-sm"><h2 className="text-xl font-black">Plan your visit</h2>

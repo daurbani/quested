@@ -242,5 +242,14 @@ export const discoveryCoordinates:Record<string,readonly [number,number]> = {
  "poppys-peril": [47.58865, -121.46745],
  "cobbles-101": [46.3268, -121.92379],
  "cocaine-connection": [47.54818, -120.75176],
- "voyage-of-the-cowdog": [44.36707, -121.13708]
+ "voyage-of-the-cowdog": [44.36707, -121.13708],
+ "tilly-jane-ski-tour": [45.422, -121.642],
+ "white-river-ski-tour": [45.352, -121.679],
+ "bennett-pass-ski-tour": [45.308, -121.638],
+ "kendall-knob-ski-tour": [47.428, -121.416],
+ "yodelin-ski-tour": [47.747, -121.067],
+ "smithbrook-ski-tour": [47.783, -121.037],
+ "mitchell-creek-ski-tour": [45.31678, -121.64007],
+ "palmer-snowfield-ski-tour": [45.358, -121.709],
+ "castle-pinnacle-saddle-ski-tour": [46.757, -121.733]
 };

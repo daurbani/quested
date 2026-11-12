@@ -381,5 +381,167 @@
       "Multipitch climbing"
     ],
     "reviewStatus": "editorial-reviewed"
+  },
+  "tilly-jane-ski-tour": {
+    "eyebrow": "Alpine touring · Human-powered ski descent",
+    "description": "An established Mount Hood touring objective up to the Tilly Jane A-Frame, combining a sustained skin ascent with a backcountry descent. A higher extension toward Cooper Spur Shelter is a different, more committing objective.",
+    "highlights": [
+      "A-frame cabin setting high on Mount Hood",
+      "Sustained skin track and forest descent",
+      "Views of Hood, Adams and eastern Cascades"
+    ],
+    "whatToKnow": "Mazamas describe roughly 1,800 feet of ascent to the A-frame; the optional higher extension adds substantial gain and exposure. Avalanche equipment, winter navigation and confident skiing are required. Confirm snow coverage, road and Sno-Park access, weather and avalanche conditions.",
+    "officialUrl": "https://mazamas.org/activity/instance/15177/",
+    "sourceName": "Mazamas",
+    "activities": [
+      "Alpine touring",
+      "Backcountry skiing",
+      "Winter navigation"
+    ],
+    "reviewStatus": "starter"
+  },
+  "white-river-ski-tour": {
+    "eyebrow": "Alpine touring · Human-powered ski descent",
+    "description": "A scenic Mount Hood south-side touring zone with alpine snow and varied ski terrain. This discovery represents a planned human-powered tour in the area, not a single prescribed line or a guaranteed low-angle descent.",
+    "highlights": [
+      "Alpine views of the south side of Mount Hood",
+      "Snowfield and canyon landscapes",
+      "Flexible objectives based on snowpack and visibility"
+    ],
+    "whatToKnow": "Define and check a specific route before departure; White River includes gullies and avalanche paths as well as gentler touring ground. Do not use this listing as a route map. Check Northwest Avalanche Center forecasts, resort boundaries, closures and travel conditions.",
+    "officialUrl": "https://www.onxmaps.com/backcountry/skiing/mount-hood",
+    "sourceName": "onX Backcountry",
+    "activities": [
+      "Alpine touring",
+      "Backcountry skiing",
+      "Winter navigation"
+    ],
+    "reviewStatus": "starter"
+  },
+  "bennett-pass-ski-tour": {
+    "eyebrow": "Alpine touring · Human-powered ski descent",
+    "description": "A varied circuit around Bennett Pass and the Pocket Creek connection with enough uphill and downhill terrain to feel like a proper ski tour. It is more involved than the short Bennett Pass Nordic road outing.",
+    "highlights": [
+      "Winter touring on Mount Hood's east side",
+      "Pocket Creek downhill sections",
+      "An extended loop with navigation choices"
+    ],
+    "whatToKnow": "Mazamas describe a challenging Bennett Pass Loop in the 8–10 mile range with roughly 1,500–2,000 ft climbing. It includes the Terrible Traverse and a difficult drop toward Pocket Creek. These sections can be inappropriate for newer tourers and should only be attempted after independent snow and avalanche assessment. Do not confuse this with the easy Nordic road out-and-back.",
+    "officialUrl": "https://mazamas.org/activity/instance/13631/detail/",
+    "sourceName": "Mazamas",
+    "activities": [
+      "Alpine touring",
+      "Backcountry skiing",
+      "Winter navigation"
+    ],
+    "reviewStatus": "starter"
+  },
+  "kendall-knob-ski-tour": {
+    "eyebrow": "Alpine touring · Human-powered ski descent",
+    "description": "An exploratory short alpine touring objective near Snoqualmie Pass with snow travel and skiable downhill terrain. Specific ascent and descent choices change with conditions, so this is a destination concept, not a verified standard track.",
+    "highlights": [
+      "Snoqualmie Pass winter scenery",
+      "Shorter touring options near Kendall terrain",
+      "Route-selection and snow-assessment practice"
+    ],
+    "whatToKnow": "Exact Kendall-area route variants and access must be verified locally before committing to a trip. Some approaches and adjacent terrain have consequential avalanche exposure. Check Northwest Avalanche Center, current WSDOT conditions and maps from a trusted touring guide; no GPX route is provided here.",
+    "officialUrl": "https://nwac.us/",
+    "sourceName": "Northwest Avalanche Center",
+    "activities": [
+      "Alpine touring",
+      "Backcountry skiing",
+      "Winter navigation"
+    ],
+    "reviewStatus": "starter"
+  },
+  "yodelin-ski-tour": {
+    "eyebrow": "Alpine touring · Human-powered ski descent",
+    "description": "Yodelin is a former ski area near Stevens Pass with uphill skinning, tree skiing and multiple descent choices. A great introductory-scale touring zone for people who can evaluate terrain and conditions—not a guarantee of low avalanche hazard.",
+    "highlights": [
+      "Tree skiing and historic ski-area terrain",
+      "Numerous tour variations",
+      "A genuine uphill and downhill backcountry outing"
+    ],
+    "whatToKnow": "Choose a conservative line based on snowpack, weather and current NWAC guidance. Yodelin includes avalanche terrain and route variations with different exposure, especially on back-side slopes. Verify parking, public land access and current conditions before travel.",
+    "officialUrl": "https://www.beexploring.com/explore/stevens-pass/skiing/backcountry/",
+    "sourceName": "beExploring Stevens Pass backcountry guide",
+    "activities": [
+      "Alpine touring",
+      "Backcountry skiing",
+      "Winter navigation"
+    ],
+    "reviewStatus": "starter"
+  },
+  "smithbrook-ski-tour": {
+    "eyebrow": "Alpine touring · Human-powered ski descent",
+    "description": "The winter approach around Smithbrook Road provides access to several backcountry terrain options, including higher snow slopes around the Nason Ridge area. It is a touring zone that needs a specific, independently verified ski route.",
+    "highlights": [
+      "Winter road approaches and mountain views",
+      "Several possible uphill and downhill objectives",
+      "An alternative to busier pass-side touring"
+    ],
+    "whatToKnow": "The Smithbrook access corridor is not by itself a defined alpine descent. Select a feasible tour from a current ski guide or with a qualified leader. Snow coverage, avalanche exposure and highway parking regulations can change quickly; check WTA, NWAC and WSDOT.",
+    "officialUrl": "https://www.wta.org/go-hiking/hikes/smithbrook",
+    "sourceName": "Washington Trails Association",
+    "activities": [
+      "Alpine touring",
+      "Backcountry skiing",
+      "Winter navigation"
+    ],
+    "reviewStatus": "starter"
+  },
+  "mitchell-creek-ski-tour": {
+    "eyebrow": "Alpine touring · Human-powered ski descent",
+    "description": "Mitchell Creek is an established Mount Hood National Forest backcountry touring trailhead used by local ski-tour educators and guides. This discovery is intentionally an area-level outing until a particular ascent and descent is selected.",
+    "highlights": [
+      "Local Mount Hood touring area",
+      "Skills-focused skinning and skiing",
+      "Opportunities for condition-specific terrain choices"
+    ],
+    "whatToKnow": "Kaf Adventures lists Mitchell Creek as a potential Mt Hood Forest backcountry touring trailhead, and Mazamas has led a tour named Mitchell Creek. These sources do not establish one universal downhill route. Choose a route only with current snow, access and avalanche information; verify the correct trailhead and avoid relying on this map pin for directions.",
+    "officialUrl": "https://kafadventures.com/collections/oregon/products/guided-backcountry-touring",
+    "sourceName": "Kaf Adventures",
+    "activities": [
+      "Alpine touring",
+      "Backcountry skiing",
+      "Winter navigation"
+    ],
+    "reviewStatus": "starter"
+  },
+  "palmer-snowfield-ski-tour": {
+    "eyebrow": "Alpine touring · Human-powered ski descent",
+    "description": "Palmer is a highly accessible alpine snowfield on Mount Hood with an established uphill-touring tradition. A skin-and-ski outing in the permitted area offers a useful place to practice alpine-touring movement and transitions.",
+    "highlights": [
+      "High-elevation snowfield setting",
+      "Skinning and downhill turns on snow",
+      "A classic Mount Hood progression objective"
+    ],
+    "whatToKnow": "Palmer lies within Timberline's managed ski area. Follow current resort uphill policies, operational closures and grooming or vehicle restrictions; do not assume slopes are open to uphill travel. Do not extend onto Zigzag Glacier, Salmon River Canyon or other serious terrain without separately assessing hazards and navigation. Conditions vary dramatically by season.",
+    "officialUrl": "https://mountainlessons.com/mthoodskiguide/routes/palmerzigzag/",
+    "sourceName": "Mountain Lessons",
+    "activities": [
+      "Alpine touring",
+      "Backcountry skiing",
+      "Winter navigation"
+    ],
+    "reviewStatus": "starter"
+  },
+  "castle-pinnacle-saddle-ski-tour": {
+    "eyebrow": "Alpine touring · Human-powered ski descent",
+    "description": "A winter ski-touring objective in the Tatoosh Range, approaching the saddle between The Castle and Pinnacle Peak above Reflection Lakes. The steepening upper bowl demands careful route and avalanche assessment.",
+    "highlights": [
+      "Spectacular Tatoosh and Mount Rainier scenery",
+      "A defined winter saddle objective",
+      "Potential downhill turns on the return"
+    ],
+    "whatToKnow": "The Mountaineers describe the winter approach from Narada Falls as about six miles and 1,400 feet of elevation gain. This is a strenuous winter trip, not a beginner avalanche-free slope. Check Mount Rainier National Park road access, entrance and vehicle chain requirements, current NWAC hazard and whether the upper bowl is suitable.",
+    "officialUrl": "https://www.mountaineers.org/activities/routes-places/pinnacle-peak-the-castle",
+    "sourceName": "The Mountaineers",
+    "activities": [
+      "Alpine touring",
+      "Backcountry skiing",
+      "Winter navigation"
+    ],
+    "reviewStatus": "starter"
   }
 }
