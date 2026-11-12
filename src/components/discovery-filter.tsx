@@ -4,6 +4,7 @@ import Link from "next/link";
 import type {Discovery} from "@/lib/catalog";
 import {supabaseBrowser} from "@/lib/supabase/client";
 import {photoForDiscovery} from "@/lib/media";
+import {getTechnicalAdventure} from "@/lib/technical-adventures";
 import {PhotoImage} from "@/components/photo";
 type View="all"|"remaining"|"completed";
 export default function DiscoveryFilter({discoveries}:{discoveries:Discovery[]}){
@@ -38,9 +39,9 @@ export default function DiscoveryFilter({discoveries}:{discoveries:Discovery[]})
   </div>
   {error&&<p role="status" className="mb-3 text-sm text-amber-800">{error}</p>}
   <p className="mb-4 text-sm text-slate-500">{visible.length} {visible.length===1?"place":"places"} {view!=="all"&&completed!==null?"shown":""}</p>
-  <div className="grid gap-3 sm:grid-cols-2">{visible.map(d=>{const done=completed?.has(d.slug)??false;const photo=photoForDiscovery(d.slug);return <Link key={d.slug} href={`/discoveries/${d.slug}`} className={`group flex gap-4 overflow-hidden rounded-xl border bg-white p-4 shadow-sm transition hover:shadow-md ${done?"border-emerald-400":"border-emerald-950/10 hover:border-emerald-600"}`}>
+  <div className="grid gap-3 sm:grid-cols-2">{visible.map(d=>{const done=completed?.has(d.slug)??false;const photo=photoForDiscovery(d.slug);const technical=getTechnicalAdventure(d.slug);return <Link key={d.slug} href={`/discoveries/${d.slug}`} className={`group flex gap-4 overflow-hidden rounded-xl border bg-white p-4 shadow-sm transition hover:shadow-md ${done?"border-emerald-400":"border-emerald-950/10 hover:border-emerald-600"}`}>
    {photo?<div className="relative h-28 w-24 shrink-0 overflow-hidden rounded-lg bg-emerald-100 sm:w-28"><PhotoImage photo={photo} width={400} className="h-full w-full object-cover"/>{done&&<span aria-label="Completed" className="absolute right-2 top-2 rounded-full bg-emerald-700 px-2 py-0.5 text-sm font-bold text-white">✓</span>}</div>:<span aria-hidden className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold ${done?"bg-emerald-700 text-white":"bg-emerald-50 text-emerald-800"}`}>{done?"✓":discoveries.indexOf(d)+1}</span>}
-   <div className="min-w-0"><div className="flex flex-wrap items-center gap-2"><h3 className="font-bold group-hover:underline">{d.name}</h3>{done&&<span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-900">Completed</span>}</div><p className="mt-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">{d.region}</p><p className="mt-2 text-sm leading-6 text-slate-600">{d.summary}</p></div>
+   <div className="min-w-0"><div className="flex flex-wrap items-center gap-2"><h3 className="font-bold group-hover:underline">{d.name}</h3>{done&&<span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-900">Completed</span>}</div><p className="mt-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">{d.region}</p>{technical&&<p className="mt-2 text-xs font-black text-emerald-900">{technical.technicalGrade} · {technical.pitches} pitches · {technical.protection} · {technical.experienceLevel}</p>}<p className="mt-2 text-sm leading-6 text-slate-600">{d.summary}</p></div>
   </Link>})}</div>
   {visible.length===0&&<div className="rounded-xl bg-white p-8 text-center text-slate-600">{view==="completed"&&completed?.size===0?"No completed discoveries yet. Pick a destination to start your adventure.":"No discoveries match these filters."}</div>}
  </div>;

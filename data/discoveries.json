@@ -565,5 +565,77 @@
     "category": "Mountain adventures",
     "status": "published",
     "catalogStatus": "starter"
+  },
+  {
+    "slug": "living-blindly",
+    "name": "Living Blindly",
+    "region": "Smith Rock, Oregon",
+    "summary": "Three-pitch bolted climb on the Marsupials with exposed moves and a memorable summit.",
+    "category": "Rock climbing",
+    "status": "published",
+    "catalogStatus": "editorial-reviewed"
+  },
+  {
+    "slug": "first-kiss",
+    "name": "First Kiss",
+    "region": "Smith Rock, Oregon",
+    "summary": "Five-pitch bolted adventure with traversing pitches and a scenic walk-off.",
+    "category": "Rock climbing",
+    "status": "published",
+    "catalogStatus": "editorial-reviewed"
+  },
+  {
+    "slug": "santiam-pinnacle-south-face",
+    "name": "South Face — Santiam Pinnacle",
+    "region": "Santiam Pass, Oregon",
+    "summary": "Three-pitch sport route up an andesite pinnacle near Santiam Pass.",
+    "category": "Rock climbing",
+    "status": "published",
+    "catalogStatus": "editorial-reviewed"
+  },
+  {
+    "slug": "giants-staircase",
+    "name": "Giant's Staircase",
+    "region": "French's Dome, Oregon",
+    "summary": "Two-pitch bolted route to the summit of French's Dome, with an airy rappel.",
+    "category": "Rock climbing",
+    "status": "published",
+    "catalogStatus": "editorial-reviewed"
+  },
+  {
+    "slug": "poppys-peril",
+    "name": "Poppy's Peril",
+    "region": "Otter Falls / Middle Fork Snoqualmie, Washington",
+    "summary": "Five-pitch bolted climbing above the Middle Fork Snoqualmie Valley.",
+    "category": "Rock climbing",
+    "status": "published",
+    "catalogStatus": "editorial-reviewed"
+  },
+  {
+    "slug": "cobbles-101",
+    "name": "Cobbles 101",
+    "region": "Pinto Rock, Southwest Washington",
+    "summary": "Five-pitch sport climbing on cobble-studded volcanic rock in Washington's southern Cascades.",
+    "category": "Rock climbing",
+    "status": "published",
+    "catalogStatus": "editorial-reviewed"
+  },
+  {
+    "slug": "cocaine-connection",
+    "name": "Cocaine Connection",
+    "region": "Icicle Creek / Leavenworth, Washington",
+    "summary": "Two-pitch bolted slab and friction climbing on Icicle Buttress.",
+    "category": "Rock climbing",
+    "status": "published",
+    "catalogStatus": "editorial-reviewed"
+  },
+  {
+    "slug": "voyage-of-the-cowdog",
+    "name": "Voyage of the Cowdog",
+    "region": "Smith Rock, Oregon",
+    "summary": "Three-pitch sport route on Picnic Lunch Wall with an airy final pitch.",
+    "category": "Rock climbing",
+    "status": "published",
+    "catalogStatus": "editorial-reviewed"
   }
 ]
