@@ -13,8 +13,8 @@ export default function GlobalDiscoverySearch(){
  const [query,setQuery]=useState("");
  const [collection,setCollection]=useState("all");
  const [category,setCategory]=useState("all");
- const terms=normalize(query).split(" ").filter(Boolean);
  const results=useMemo(()=>{
+  const terms=normalize(query).split(" ").filter(Boolean);
   return allDiscoveries.filter(d=>{
    const memberships=collectionsByDiscovery.get(d.slug)??[];
    if(collection!=="all"&&!memberships.some(c=>c.slug===collection))return false;
@@ -28,7 +28,7 @@ export default function GlobalDiscoverySearch(){
    const score=(name:string)=>{const normalized=normalize(name);return normalized===needle?0:normalized.startsWith(needle)?1:normalized.includes(needle)?2:3};
    return score(a.name)-score(b.name)||a.name.localeCompare(b.name);
   });
- },[query,collection,category,terms.join("|")]);
+ },[query,collection,category]);
  const clear=()=>{setQuery("");setCollection("all");setCategory("all")};
  return <section aria-label="Search all discoveries" className="mt-8">
   <div className="rounded-2xl border border-emerald-900/10 bg-white p-4 shadow-sm sm:p-6">
@@ -46,7 +46,7 @@ export default function GlobalDiscoverySearch(){
     </label>
    </div>
   </div>
-  <p role="status" aria-live="polite" className="my-5 text-sm font-semibold text-slate-600">{results.length} of {allDiscoveries.length} discoveries {terms.length||collection!=="all"||category!=="all"?"match your search":"to explore"}</p>
+  <p role="status" aria-live="polite" className="my-5 text-sm font-semibold text-slate-600">{results.length} of {allDiscoveries.length} discoveries {query.trim()||collection!=="all"||category!=="all"?"match your search":"to explore"}</p>
   {results.length?<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{results.map(d=>{
    const photo=photoForDiscovery(d.slug);
    const memberships=collectionsByDiscovery.get(d.slug)??[];
