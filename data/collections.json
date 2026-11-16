@@ -188,5 +188,20 @@
       "palmer-snowfield-ski-tour",
       "castle-pinnacle-saddle-ski-tour"
     ]
+  },
+  {
+    "slug": "forest-park-classic-nasties",
+    "name": "Forest Park Nasties — The Classic Five",
+    "description": "Take on North, South, Skyline, Flaming, and Alphabet: five challenging, hilly Portland trail-running and hiking routes. Follow the historic route sources and verify current access. This independent classic-five checklist is not registration for the Forest Park Conservancy's seasonal Nasty Challenge.",
+    "category": "Trail running / hiking",
+    "emoji": "🌲",
+    "status": "published",
+    "discoverySlugs": [
+      "north-nasty",
+      "south-nasty",
+      "skyline-nasty",
+      "flaming-nasty",
+      "alphabet-nasty"
+    ]
   }
 ]
