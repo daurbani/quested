@@ -28,5 +28,5 @@ export default function SaveCollectionButton({slug}:{slug:string}){
  }
  if(loading)return null;
  if(!userId)return <Link href={`/sign-in?next=/collections/${slug}`} className="mt-5 inline-block rounded-full border border-white/50 px-5 py-2.5 text-sm font-bold text-white hover:bg-white/10">Sign in to save collection</Link>;
- return <div className="mt-5"><button type="button" onClick={()=>void toggle()} disabled={busy||Boolean(error)} aria-pressed={saved} className="rounded-full border border-white/50 bg-white/10 px-5 py-2.5 text-sm font-bold text-white hover:bg-white/20 disabled:opacity-60">{busy?"Updating…":saved?"✓ Saved to My Collections":"☆ Save collection"}</button>{error&&<p role="alert" className="mt-2 text-xs text-amber-100">{error}</p>}</div>;
+ return <div className="mt-5"><button type="button" onClick={()=>void toggle()} disabled={busy} aria-pressed={saved} className="rounded-full border border-white/50 bg-white/10 px-5 py-2.5 text-sm font-bold text-white hover:bg-white/20 disabled:opacity-60">{busy?"Updating…":saved?"✓ Saved to My Collections":"☆ Save collection"}</button>{error&&<p role="alert" className="mt-2 text-xs text-amber-100">{error}</p>}</div>;
 }
