@@ -718,5 +718,50 @@
     "category": "Ski touring",
     "status": "published",
     "catalogStatus": "starter"
+  },
+  {
+    "slug": "north-nasty",
+    "name": "North Nasty",
+    "region": "Forest Park, Portland, Oregon",
+    "summary": "A steep northern Forest Park loop linking fire lanes, BPA Road, and Wildwood; roughly 11–12 miles with about 2,800–2,900 feet of climbing.",
+    "category": "Trail running / hiking",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "south-nasty",
+    "name": "South Nasty",
+    "region": "Forest Park, Portland, Oregon",
+    "summary": "A classic southern counterpart to North Nasty, linking quieter fire lanes and trails for roughly 13 miles and nearly 3,000 feet of climbing.",
+    "category": "Trail running / hiking",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "skyline-nasty",
+    "name": "Skyline Nasty",
+    "region": "Forest Park, Portland, Oregon",
+    "summary": "A strenuous roughly 10-mile hill-training loop associated with Skyline Tavern, using steep climbs and descents.",
+    "category": "Trail running / hiking",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "flaming-nasty",
+    "name": "Flaming Nasty",
+    "region": "Forest Park, Portland, Oregon",
+    "summary": "A long, demanding Forest Park challenge connecting fire lanes 1 through 5; historical descriptions place it around 16 miles and nearly 3,000 feet of ascent.",
+    "category": "Trail running / hiking",
+    "status": "published",
+    "catalogStatus": "starter"
+  },
+  {
+    "slug": "alphabet-nasty",
+    "name": "Alphabet Nasty",
+    "region": "Forest Park, Portland, Oregon",
+    "summary": "A hilly loop traversing alphabet-named connector trails such as Birch, Aspen, Wild Cherry, and Dogwood; historical route descriptions place it around 14 miles.",
+    "category": "Trail running / hiking",
+    "status": "published",
+    "catalogStatus": "starter"
   }
 ]

@@ -543,5 +543,90 @@
       "Winter navigation"
     ],
     "reviewStatus": "starter"
+  },
+  "north-nasty": {
+    "eyebrow": "Classic Forest Park Nasty · Trail running / hiking",
+    "description": "A steep northern Forest Park loop linking fire lanes, BPA Road, and Wildwood; roughly 11–12 miles with about 2,800–2,900 feet of climbing. This is a classic informal route challenge, not an official GPS track or a guaranteed current route.",
+    "highlights": [
+      "One of the five classic Forest Park Nasties",
+      "Steep hill training on lesser-traveled trails and fire lanes",
+      "Complete by trail running or hiking, at your own pace"
+    ],
+    "whatToKnow": "These routes are strenuous and navigation-intensive. Distances and elevation gain vary by route version. Consult the linked route source and current Portland Parks trail alerts before going; check for closures, road crossings, mud, and changing trail conditions. Quested's classic-five collection is independent of the Forest Park Conservancy's current seasonal fundraising challenge.",
+    "officialUrl": "https://territoryrun.co/blogs/routes/north-nasty",
+    "sourceName": "Territory Run Co.",
+    "activities": [
+      "Trail running",
+      "Hiking"
+    ],
+    "reviewStatus": "starter"
+  },
+  "south-nasty": {
+    "eyebrow": "Classic Forest Park Nasty · Trail running / hiking",
+    "description": "A classic southern counterpart to North Nasty, linking quieter fire lanes and trails for roughly 13 miles and nearly 3,000 feet of climbing. This is a classic informal route challenge, not an official GPS track or a guaranteed current route.",
+    "highlights": [
+      "One of the five classic Forest Park Nasties",
+      "Steep hill training on lesser-traveled trails and fire lanes",
+      "Complete by trail running or hiking, at your own pace"
+    ],
+    "whatToKnow": "These routes are strenuous and navigation-intensive. Distances and elevation gain vary by route version. Consult the linked route source and current Portland Parks trail alerts before going; check for closures, road crossings, mud, and changing trail conditions. Quested's classic-five collection is independent of the Forest Park Conservancy's current seasonal fundraising challenge.",
+    "officialUrl": "https://sites.google.com/site/runs4cache/areas/forest-park",
+    "sourceName": "Runs4Cache classic Nasties",
+    "activities": [
+      "Trail running",
+      "Hiking"
+    ],
+    "reviewStatus": "starter"
+  },
+  "skyline-nasty": {
+    "eyebrow": "Classic Forest Park Nasty · Trail running / hiking",
+    "description": "A strenuous roughly 10-mile hill-training loop associated with Skyline Tavern, using steep climbs and descents. This is a classic informal route challenge, not an official GPS track or a guaranteed current route.",
+    "highlights": [
+      "One of the five classic Forest Park Nasties",
+      "Steep hill training on lesser-traveled trails and fire lanes",
+      "Complete by trail running or hiking, at your own pace"
+    ],
+    "whatToKnow": "These routes are strenuous and navigation-intensive. Distances and elevation gain vary by route version. Consult the linked route source and current Portland Parks trail alerts before going; check for closures, road crossings, mud, and changing trail conditions. Quested's classic-five collection is independent of the Forest Park Conservancy's current seasonal fundraising challenge.",
+    "officialUrl": "https://territoryrun.co/blogs/news/the-getaway",
+    "sourceName": "Territory Run Co.",
+    "activities": [
+      "Trail running",
+      "Hiking"
+    ],
+    "reviewStatus": "starter"
+  },
+  "flaming-nasty": {
+    "eyebrow": "Classic Forest Park Nasty · Trail running / hiking",
+    "description": "A long, demanding Forest Park challenge connecting fire lanes 1 through 5; historical descriptions place it around 16 miles and nearly 3,000 feet of ascent. This is a classic informal route challenge, not an official GPS track or a guaranteed current route.",
+    "highlights": [
+      "One of the five classic Forest Park Nasties",
+      "Steep hill training on lesser-traveled trails and fire lanes",
+      "Complete by trail running or hiking, at your own pace"
+    ],
+    "whatToKnow": "These routes are strenuous and navigation-intensive. Distances and elevation gain vary by route version. Consult the linked route source and current Portland Parks trail alerts before going; check for closures, road crossings, mud, and changing trail conditions. Quested's classic-five collection is independent of the Forest Park Conservancy's current seasonal fundraising challenge.",
+    "officialUrl": "https://sites.google.com/site/runs4cache/areas/forest-park",
+    "sourceName": "Runs4Cache classic Nasties",
+    "activities": [
+      "Trail running",
+      "Hiking"
+    ],
+    "reviewStatus": "starter"
+  },
+  "alphabet-nasty": {
+    "eyebrow": "Classic Forest Park Nasty · Trail running / hiking",
+    "description": "A hilly loop traversing alphabet-named connector trails such as Birch, Aspen, Wild Cherry, and Dogwood; historical route descriptions place it around 14 miles. This is a classic informal route challenge, not an official GPS track or a guaranteed current route.",
+    "highlights": [
+      "One of the five classic Forest Park Nasties",
+      "Steep hill training on lesser-traveled trails and fire lanes",
+      "Complete by trail running or hiking, at your own pace"
+    ],
+    "whatToKnow": "These routes are strenuous and navigation-intensive. Distances and elevation gain vary by route version. Consult the linked route source and current Portland Parks trail alerts before going; check for closures, road crossings, mud, and changing trail conditions. Quested's classic-five collection is independent of the Forest Park Conservancy's current seasonal fundraising challenge.",
+    "officialUrl": "https://sites.google.com/site/runs4cache/areas/forest-park/alphabet-nasty",
+    "sourceName": "Runs4Cache route notes",
+    "activities": [
+      "Trail running",
+      "Hiking"
+    ],
+    "reviewStatus": "starter"
   }
 }
