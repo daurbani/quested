@@ -1,0 +1,4 @@
+import Link from "next/link";
+import MyCollections from "@/components/my-collections";
+export const metadata={title:"My Collections | Quested"};
+export default function MyCollectionsPage(){return <main className="mx-auto max-w-5xl px-5 py-12"><p className="text-xs font-black uppercase tracking-widest text-emerald-700">Your adventure collections</p><h1 className="mt-3 text-4xl font-black">My Collections</h1><p className="mt-3 text-slate-600">Your progress is always yours, whether a collection is official or shared by a friend.</p><div className="mt-6 flex gap-4 text-sm font-bold"><Link href="/my-quested" className="text-emerald-800 underline">My adventure history</Link><Link href="/profile" className="text-emerald-800 underline">Edit profile</Link></div><div className="mt-8"><MyCollections/></div></main>;}
